@@ -3,8 +3,36 @@ extends templates/template.pug
 block variables
 	//- переменная для template.pug
 	- var pageTitle = "Баланс жизни начинается с пространства"
-
+	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
 
 block main
+	header.main__header
+		p.main__header-title Баланс
+			sup ®
+		p.main__header-subtitle Баланс жизни начинается с пространства
 
-	main
+		p.list-links
+			a(href="#") Экстерьер
+			a(href="#") Визуализация
+			a(href="#") Интерьер
+			a(href="#") Дизайн
+
+	section
+		h2.visually-hidden Последние работы
+
+		.slider.swiper
+			ul.swiper-wrapper.slider__list
+				li.swiper-slide.slider__item
+					img(src="./img/heder-slide-1.jpg", alt="#")
+				li.swiper-slide.slider__item
+					img(src="./img/heder-slide-2.jpg", alt="#")
+				li.swiper-slide.slider__item
+					img(src="./img/heder-slide-3.jpg", alt="#")
+
+			button.swiper-button-prev.slider__button-prew(type="button")
+				span.visually-hidden Назад
+			button.swiper-button-next.slider__button-next(type="button")
+				span.visually-hidden вперёд
+
+	link(rel="stylesheet", href="./static/swiper/swiper-bundle.min.css")
+	script(src="./static/swiper/swiper-bundle.min.js")

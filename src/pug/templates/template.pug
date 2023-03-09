@@ -10,11 +10,14 @@ html(lang="en")
 		link(rel="stylesheet", href="styles/main.min.css")
 
 	body
+		h1.visually-hidden #{pageHeading}
 
 		include header.pug
 
-		block main
+		.container
+			main.main
+				block main
 
 		include footer.pug
 
-		script(src="js/main.js")
+		script(src="scripts/main.js")
