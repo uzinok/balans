@@ -8,8 +8,8 @@ window.addEventListener('load', function() {
 
 			// Navigation arrows
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.slider__button-next',
+				prevEl: '.slider__button-prev',
 			}
 		});
 	}

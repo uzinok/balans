@@ -30,8 +30,8 @@ block main
 				li.swiper-slide.slider__item
 					img(src="./img/heder-slide-3.jpg", alt="#")
 
-			button.swiper-button-prev.slider__button-prew(type="button")
-			button.swiper-button-next.slider__button-next(type="button")
+			button.slider__button-prev.button-arrow.button-arrow--right(type="button")
+			button.slider__button-next.button-arrow.button-arrow--left(type="button")
 
 	section.portfolio
 		p.portfolio__title Мы создаем пространства с&#160;ощущением
@@ -48,28 +48,28 @@ block main
 					a(href="#") Комплектация проекта
 				img(src="img/portfolio/portfolio-1.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow(href="#")
+				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Интерьер
 				img(src="img/portfolio/portfolio-2.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow(href="#")
+				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Экстерьер
 				img(src="img/portfolio/portfolio-3.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow(href="#")
+				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Интерьер
 				img(src="img/portfolio/portfolio-4.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow(href="#")
+				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
@@ -77,8 +77,9 @@ block main
 					a(href="#") Комплектация проекта
 				img(src="img/portfolio/portfolio-5.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow(href="#")
+				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
+
 		a.button.button--big(href="#") Смотреть все работы
 
 	section.services
@@ -88,22 +89,32 @@ block main
 			span.services__left Мы занимаемся
 			span.services__right
 				span дизайн проектами
+					a.services__button-arrow.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden подробнее
 				span визуализацией интерьера
+					a.services__button-arrow.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden подробнее
 				span визуализацией экстерьера
+					a.services__button-arrow.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden подробнее
 				span комплектацией проекта
+					a.services__button-arrow.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden подробнее
 				span авторским надзором
+					a.services__button-arrow.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden подробнее
 
 	section.feedback
 		h2.visually-hidden Обратная связь
 		form.feedback__content(action="#")
 			p.feedback__title Обсудим ваш проект?
 			p.feedback__subtitle Оставьте заявку и мы свяжемся с вами :)
-			label Напишите своё имя
-			input.feedback__input(type="text", name="name", placeholder="Ваше имя")
-			label Напишите номер телефона
-			input.feedback__input(type="tel", name="phone", placeholder="+7 (___) ___-__-__")
+			label.visually-hidden(for="name") Напишите своё имя
+			input#name.feedback__input(type="text", name="name", placeholder="Ваше имя", required)
+			label.visually-hidden(for="phone") Напишите номер телефона
+			input#phone.feedback__input(type="tel", name="phone", placeholder="+7 (___) ___-__-__", required)
 			label
-				input.feedback__checkbox(type="checkbox")
+				input.visually-hidden.feedback__checkbox(type="checkbox")
 				| Даю согласие на обработку персональных данных
 			button.feedback__submit(type="submit") Оставить заявку
 

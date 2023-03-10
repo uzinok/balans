@@ -6,11 +6,20 @@
 
 .services__left {
 	position: sticky;
-	top: 0;
+	top: 50vh;
 }
 
 .services__right {
 	& span {
 		display: block;
 	}
+}
+
+.services__button-arrow {
+	opacity: 0;
+	transition: opacity var(--transition-duration) var(--transition-function);
+}
+
+.services__right span:hover .services__button-arrow {
+	opacity: 1;
 }
