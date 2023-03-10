@@ -1,12 +1,14 @@
-window.addEventListener('load', function () {
-	const swiper = new Swiper('.swiper', {
-		// Optional parameters
-		loop: true,
+window.addEventListener('load', function() {
+	if (this.document.querySelector('.swiper')) {
+		const swiper = new Swiper('.swiper', {
+				// Optional parameters
+				loop: true,
 
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+				// Navigation arrows
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				}
+			});
 		}
-	});
 });
