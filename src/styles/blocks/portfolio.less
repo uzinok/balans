@@ -1,7 +1,64 @@
 .portfolio__title {
-	font-family: 'Random Grotesque Standard', Arial, Helvetica, sans-serif;
+	position: relative;
+	max-width: 660px;
 	font-weight: 600;
 	font-size: 48px;
 	line-height: 1;
-	max-width: 660px;
+	font-family: 'Random Grotesque Standard', Arial, Helvetica, sans-serif;
 }
+
+.portfolio__title-animate {
+	position: relative;
+	display: block;
+	height: 48px;
+	overflow: hidden;
+
+	& span {
+		--duration: 20s;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		perspective: 100px;
+		opacity: 0;
+		animation-name: portfolio-title;
+		animation-duration: var(--duration);
+		animation-timing-function: var(--transition-function);
+		animation-iteration-count: infinite;
+
+		&:nth-child(2) {
+			animation-delay: calc(var(--duration)/3);
+			}
+
+			&:nth-child(3) {
+				animation-delay: calc(var(--duration)/3 * 2);
+				}
+			}
+		}
+
+		@keyframes portfolio-title {
+			0% {
+				transform: rotateX(90deg) translateY(100%);
+				opacity: 0;
+			}
+
+			1% {
+				transform: rotateX(0) translateY(0);
+				opacity: 1;
+			}
+
+			32% {
+				transform: rotateX(0) translateY(0);
+				opacity: 1;
+			}
+
+			33% {
+				transform: rotateX(90deg) translateY(-100%);
+				opacity: 0;
+			}
+
+			100% {
+				transform: rotateX(90deg) translateY(-100%);
+				opacity: 0;
+			}
+		}

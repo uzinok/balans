@@ -1,6 +1,7 @@
 "use strict";
 
 window.addEventListener('load', function () {
+  document.body.classList.remove('no-js');
   if (this.document.querySelector('.swiper')) {
     var swiper = new Swiper('.swiper', {
       // Optional parameters
