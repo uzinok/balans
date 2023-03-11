@@ -1,0 +1,39 @@
+.work {
+	overflow: hidden;
+}
+
+.work__container {
+	padding-bottom: 64px;
+
+	@media (min-width: @min-lg) {
+		padding-bottom: 84px;
+	}
+}
+
+.work__slider__list {
+	margin: 0 0 12px;
+	padding: 0;
+
+	@media (min-width: @min-md) {
+		margin-bottom: 22px;
+	}
+}
+
+.work__slider {
+	overflow: visible;
+}
+
+.work__slider__item {
+	& img {
+		display: block;
+	}
+}
+
+.work__slider__button-wrap {
+	text-align: center;
+
+	@media (min-width: @min-md) {
+		text-align: right;
+		padding-right: calc(178px - var(--offset-page));
+	}
+}

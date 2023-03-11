@@ -20,20 +20,22 @@ block main
 				a(href="#") Интерьер
 				a(href="#") Дизайн
 
-	section
-		h2.visually-hidden Последние работы
+	section.work
+		.container.work__container
+			h2.visually-hidden Последние работы
 
-		.slider.swiper
-			ul.swiper-wrapper.slider__list
-				li.swiper-slide.slider__item
-					img(src="./img/heder-slide-1.jpg", alt="#")
-				li.swiper-slide.slider__item
-					img(src="./img/heder-slide-2.jpg", alt="#")
-				li.swiper-slide.slider__item
-					img(src="./img/heder-slide-3.jpg", alt="#")
+			.work__slider.swiper
+				ul.swiper-wrapper.work__slider__list
+					li.swiper-slide.work__slider__item
+						img(src="./img/heder-slide-1.jpg", alt="#")
+					li.swiper-slide.work__slider__item
+						img(src="./img/heder-slide-2.jpg", alt="#")
+					li.swiper-slide.work__slider__item
+						img(src="./img/heder-slide-3.jpg", alt="#")
 
-			button.slider__button-prev.button-arrow.button-arrow--right(type="button")
-			button.slider__button-next.button-arrow.button-arrow--left(type="button")
+				.work__slider__button-wrap
+					button.work__slider__button-prev.button-arrow.button-arrow--right(type="button")
+					button.work__slider__button-next.button-arrow.button-arrow--left(type="button")
 
 	section.portfolio
 		p.portfolio__title Мы создаем пространства с&#160;ощущением

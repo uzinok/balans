@@ -2,13 +2,18 @@
 	overflow: hidden;
 	position: relative;
 	display: inline-block;
-	width: 74px;
-	height: 24px;
 	padding: 0;
 	background-color: transparent;
 	border: 1px solid var(--color-text);
 	border-radius: 12px;
 	appearance: none;
+	width: 65px;
+	height: 21px;
+
+	@media (min-width: @min-md) {
+	width: 74px;
+	height: 24px;
+	}
 
 	&::before {
 		content: '';
@@ -20,6 +25,11 @@
 		background-color: var(--color-text);
 		mask-position: center;
 		mask-repeat: no-repeat;
+	mask-size: 21px auto;
+
+	@media (min-width: @min-md) {
+	mask-size: 24px auto;
+	}
 	}
 }
 .button-arrow--left::before {
