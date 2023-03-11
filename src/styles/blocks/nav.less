@@ -5,7 +5,22 @@
 	padding: 0;
 	list-style-type: none;
 }
+//
+.nav__right {
+	text-align: right;
+}
 
+@media (min-width: @min-lg) {
+	.nav__list {
+		margin: 0 auto;
+		width: fit-content;
+	}
+
+	.nav__link {
+		padding: 4px;
+	}
+}
+//
 .nav__link {
 	position: relative;
 	font-weight: 600;
