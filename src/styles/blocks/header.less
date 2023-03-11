@@ -1,9 +1,114 @@
-.header__container {
+.header {
+	border-bottom: 1px solid #DDDCD6;
+}
 
-	@media (min-width: @min-lg) {
-		display: grid;
-		align-items: center;
-		grid-template-columns: 250px 1fr 250px;
-		gap: 20px;
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: var(--offset-page-top);
+	padding-bottom: var(--offset-page-top);
+}
+
+.header__logo img {
+	width: 82px;
+	height: 47px;
+
+	@media (min-width: @min-md) {
+		width: 116px;
+		height: 66px;
+	}
+}
+
+@media (max-width: @max-md) {
+	.header__nav-toggle {
+		position: relative;
+		display: block;
+		width: 65px;
+		height: 16px;
+		padding: 0;
+		background-color: transparent;
+		border: 1px solid transparent;
+		border-top-color: #000;
+		border-bottom-color: #000;
+		appearance: none;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			border-top: 1px solid #000;
+			transform: translateY(-50%);
+		}
+
+		&::after {
+			border-top: 0;
+		}
+	}
+}
+
+@media (min-width: @min-md) {
+	.header__nav-toggle {
+		display: none;
+	}
+
+	.header__right,
+	.header__logo {
+		flex-shrink: 0;
+		width: 200px;
+	}
+
+	.header__right {
+		margin-right: -10px;
+		margin-left: 10px;
+		text-align: right;
+	}
+}
+
+.header__link {
+	--line-height: 17px;
+	position: relative;
+	display: block;
+	height: var(--line-height);
+	padding: 4px 10px 5px;
+	overflow: hidden;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: var(--line-height);
+	color: inherit;
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
+.header__link {
+	& span {
+		display: block;
+		height: var(--line-height);
+		transition: opacity var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);
+	}
+
+	& .header__link-hover {
+		opacity: 0;
+	}
+
+	& .header__link-view {
+		opacity: 1;
+	}
+
+	&:hover {
+		& span {
+			transform: translateY(-100%);
+		}
+
+		& .header__link-hover {
+			opacity: 1;
+		}
+
+		& .header__link-view {
+			opacity: 0;
+		}
 	}
 }

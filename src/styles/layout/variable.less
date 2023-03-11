@@ -18,4 +18,16 @@
 	--transition-function: ease-in-out;
 
 	--color-text: #212121;
+
+	--offset-page-top: 12px;
+	--offset-page: 12px;
+
+	@media (min-width: @min-md) {
+		--offset-page: 32px;
+	--offset-page-top: 13px;
+	}
+
+	@media (min-width: @min-lg) {
+		--offset-page: 64px;
+	}
 }

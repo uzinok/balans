@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	margin-bottom: 1000px;
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	color: var(--color-text);
 	background-color: #F5F4EF;
@@ -8,17 +7,18 @@ body {
 
 img {
 	max-width: 100%;
+	object-fit: contain;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   width: 0;
-//   height: 0;
-//   margin: 0;
-//   padding: 0;
-//   overflow: hidden;
-//   border: none;
-// }
+.visually-hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+}
 
 h1 {
 	font-weight: 600;
@@ -27,15 +27,23 @@ h1 {
 .container {
 	max-width: 1152px;
 	margin: 0 auto;
+	padding: 0 var(--offset-page);
+}
+
+.main {
+
+	padding-top: 32px;
+
+	@media (min-width: @min-lg) {
+		padding-top: 54px;
+	}
 }
 
 .main__header-title {
 	font-weight: 600;
-	font-size: 184px;
-	line-height: 164px;
+	line-height: 89%;
 	font-family: 'Random Grotesque Standard';
+	text-transform: uppercase;
 	font-style: normal;
-	/* identical to box height, or 89% */
-
 	letter-spacing: -0.01em;
 }

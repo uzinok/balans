@@ -5,43 +5,19 @@
 	padding: 0;
 	list-style-type: none;
 }
-//
-.nav__right {
-	text-align: right;
+
+@media (max-width: @max-md) {
+
+	.nav__right,
+	.nav {
+		display: none;
+	}
 }
 
-@media (min-width: @min-lg) {
+@media (min-width: @min-md) {
 	.nav__list {
-		margin: 0 auto;
+		justify-content: center;
 		width: fit-content;
-	}
-
-	.nav__link {
-		padding: 4px;
-	}
-}
-//
-.nav__link {
-	position: relative;
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 17px;
-	color: inherit;
-	text-transform: lowercase;
-	text-decoration: none;
-	overflow: hidden;
-	display: block;
-}
-
-.nav__link {
-
-	&:hover {
-		&::after {
-			transform: translateY(0);
-		}
-
-		& span {
-			transform: translateY(-100%);
-		}
+		margin: 0 auto;
 	}
 }

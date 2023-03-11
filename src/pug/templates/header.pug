@@ -2,32 +2,26 @@ header.header
 	.header__container.container
 
 		a.header__logo(href="index.html")
-			img(src="img/logo_header.svg", srcset="img/logo_header@2x.svg 2x", alt="Баланс", width="116")
+			img(src="img/logo_header.svg", srcset="img/logo_header@2x.svg 2x", alt="Баланс", width="82" height="47")
+
+		button.header__nav-toggle(type="button")
+			span.visually-hidden Показать меню
 
 		nav.nav
 			ul.nav__list
 				li.nav__item
-					a.nav__link(href="#", data-hover="Портфолио")
-						span.nav__link-view Портфолио
-						span.nav__link-hover(aria-hidden="true") Портфолио
+					a.header__link(href="#")
+						span.header__link-view Портфолио
+						span.header__link-hover(aria-hidden="true") Портфолио
 				li.nav__item
-					a.nav__link(href="#", data-hover="Услуги")
-						span.nav__link-view Услуги
-						span.nav__link-hover(aria-hidden="true") Услуги
+					a.header__link(href="#")
+						span.header__link-view Услуги
+						span.header__link-hover(aria-hidden="true") Услуги
 				li.nav__item
-					a.nav__link(href="#", data-hover="Контакты")
-						span.nav__link-view Контакты
-						span.nav__link-hover(aria-hidden="true") Контакты
-		.nav__right
-			a(href="tel:+79997606778") 8 (999) 760-67-78
-
-	img(src="./img/logo_header-1.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-2.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-3.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-4.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-5.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-6.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-7.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-8.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-9.svg", alt="Баланс", width="116")
-	img(src="./img/logo_header-10.svg", alt="Баланс", width="116")
+					a.header__link(href="#")
+						span.header__link-view Контакты
+						span.header__link-hover(aria-hidden="true") Контакты
+		.nav__right.header__right
+			a.header__link(href="tel:+79997606778")
+					span.header__link-view 8 (999) 760-67-78
+					span.header__link-hover(aria-hidden="true") 8 (999) 760-67-78

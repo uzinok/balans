@@ -12,13 +12,13 @@ html(lang="ru")
 		link(rel="stylesheet", href="styles/main.min.css")
 
 	body.no-js
-		//- h1.visually-hidden #{pageHeading}
+		h1.visually-hidden #{pageHeading}
 
 		include header.pug
 
-		.container
-			main.main
-				block main
+
+		main.main.container
+			block main
 
 		include footer.pug
 
