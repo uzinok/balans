@@ -248,7 +248,7 @@ function createWebp() {
 				webp: {}
 			})
 		)
-		.pipe(dest(paths.img.src));
+		.pipe(dest(paths.img.resource));
 }
 
 function createAvif() {
@@ -260,7 +260,7 @@ function createAvif() {
 				}
 			})
 		)
-		.pipe(dest(paths.img.src));
+		.pipe(dest(paths.img.resource));
 }
 
 function sprite() {

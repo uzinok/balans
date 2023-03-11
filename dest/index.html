@@ -11,7 +11,7 @@
   <body class="no-js">
     <h1 class="visually-hidden">&quot;Баланс&quot; - студия дизайна жилых помещений</h1>
     <header class="header">
-      <div class="header__container container"><a class="header__logo" href="index.html"><img src="img/logo_header.svg" srcset="img/logo_header@2x.svg 2x" alt="Баланс" width="82" height="47"/></a>
+      <div class="header__container container"><a class="header__logo" href="index.html"><img src="img/logo/logo_header.svg" srcset="img/logo/logo_header@2x.svg 2x" alt="Баланс" width="82" height="47"/></a>
         <button class="header__nav-toggle" type="button"><span class="visually-hidden">Показать меню</span></button>
         <nav class="nav">
           <ul class="nav__list">
@@ -36,9 +36,33 @@
           <h2 class="visually-hidden">Последние работы</h2>
           <div class="work__slider swiper">
             <ul class="swiper-wrapper work__slider__list">
-              <li class="swiper-slide work__slider__item"><img src="./img/heder-slide-1.jpg" alt="#"/></li>
-              <li class="swiper-slide work__slider__item"><img src="./img/heder-slide-2.jpg" alt="#"/></li>
-              <li class="swiper-slide work__slider__item"><img src="./img/heder-slide-3.jpg" alt="#"/></li>
+              <li class="swiper-slide work__slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-1@xl.avif" type="image/avif"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-1@xl.webp" type="image/webp"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-1@xl.jpg"/>
+                  <source srcset="./img/home-slider/heder-slide-1@md.avif" type="image/avif"/>
+                  <source srcset="./img/home-slider/heder-slide-1@md.webp" type="image/webp"/><img src="./img/home-slider/heder-slide-1@md.jpg" alt="#" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="swiper-slide work__slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-2@xl.avif" type="image/avif"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-2@xl.webp" type="image/webp"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-2@xl.jpg"/>
+                  <source srcset="./img/home-slider/heder-slide-2@md.avif" type="image/avif"/>
+                  <source srcset="./img/home-slider/heder-slide-2@md.webp" type="image/webp"/><img src="./img/home-slider/heder-slide-2@md.jpg" alt="#" loading="lazy"/>
+                </picture>
+              </li>
+              <li class="swiper-slide work__slider__item">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-3@xl.avif" type="image/avif"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-3@xl.webp" type="image/webp"/>
+                  <source media="(min-width: 768px)" srcset="./img/home-slider/heder-slide-3@xl.jpg"/>
+                  <source srcset="./img/home-slider/heder-slide-3@md.avif" type="image/avif"/>
+                  <source srcset="./img/home-slider/heder-slide-3@md.webp" type="image/webp"/><img src="./img/home-slider/heder-slide-3@md.jpg" alt="#" loading="lazy"/>
+                </picture>
+              </li>
             </ul>
             <div class="work__slider__button-wrap">
               <button class="work__slider__button-prev button-arrow button-arrow--right" type="button"></button>
@@ -52,23 +76,23 @@
         <h2 class="portfolio__subtitle">Наше портфолио - наша гордость. Потому что каждая работа сделана с душой.</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <p class="list-links"><a href="#">Интерьер</a><a href="#">Комплектация проекта</a></p><img src="img/portfolio/portfolio-1.jpg" alt="#"/>
+            <p class="list-links"><a href="#">Интерьер</a><a href="#">Комплектация проекта</a></p><img src="img/home-portfolio/portfolio-1.jpg" alt="#"/>
             <h3 class="portfolio__list-title">Интерьер квартиры в жилом комплексе «колизей» для молодой пары</h3><a class="button-arrow button-arrow--left" href="#"><span class="visually-hidden">Подробнее</span></a>
           </li>
           <li class="portfolio__item">
-            <p class="list-links"><a href="#">Интерьер</a></p><img src="img/portfolio/portfolio-2.jpg" alt="#"/>
+            <p class="list-links"><a href="#">Интерьер</a></p><img src="img/home-portfolio/portfolio-2.jpg" alt="#"/>
             <h3 class="portfolio__list-title">Интерьер квартиры в жилом комплексе «колизей» для молодой пары</h3><a class="button-arrow button-arrow--left" href="#"><span class="visually-hidden">Подробнее</span></a>
           </li>
           <li class="portfolio__item">
-            <p class="list-links"><a href="#">Экстерьер</a></p><img src="img/portfolio/portfolio-3.jpg" alt="#"/>
+            <p class="list-links"><a href="#">Экстерьер</a></p><img src="img/home-portfolio/portfolio-3.jpg" alt="#"/>
             <h3 class="portfolio__list-title">Интерьер квартиры в жилом комплексе «колизей» для молодой пары</h3><a class="button-arrow button-arrow--left" href="#"><span class="visually-hidden">Подробнее</span></a>
           </li>
           <li class="portfolio__item">
-            <p class="list-links"><a href="#">Интерьер</a></p><img src="img/portfolio/portfolio-4.jpg" alt="#"/>
+            <p class="list-links"><a href="#">Интерьер</a></p><img src="img/home-portfolio/portfolio-4.jpg" alt="#"/>
             <h3 class="portfolio__list-title">Интерьер квартиры в жилом комплексе «колизей» для молодой пары</h3><a class="button-arrow button-arrow--left" href="#"><span class="visually-hidden">Подробнее</span></a>
           </li>
           <li class="portfolio__item">
-            <p class="list-links"><a href="#">Интерьер</a><a href="#">Комплектация проекта</a></p><img src="img/portfolio/portfolio-5.jpg" alt="#"/>
+            <p class="list-links"><a href="#">Интерьер</a><a href="#">Комплектация проекта</a></p><img src="img/home-portfolio/portfolio-5.jpg" alt="#"/>
             <h3 class="portfolio__list-title">Интерьер квартиры в жилом комплексе «колизей» для молодой пары</h3><a class="button-arrow button-arrow--left" href="#"><span class="visually-hidden">Подробнее</span></a>
           </li>
         </ul><a class="button button--big" href="#">Смотреть все работы</a>

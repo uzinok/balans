@@ -27,11 +27,29 @@ block main
 			.work__slider.swiper
 				ul.swiper-wrapper.work__slider__list
 					li.swiper-slide.work__slider__item
-						img(src="./img/heder-slide-1.jpg", alt="#")
+						picture
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.jpg")
+							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
+							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
+							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#", loading="lazy")
 					li.swiper-slide.work__slider__item
-						img(src="./img/heder-slide-2.jpg", alt="#")
+						picture
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.jpg")
+							source(srcset="./img/home-slider/heder-slide-2@md.avif", type="image/avif")
+							source(srcset="./img/home-slider/heder-slide-2@md.webp", type="image/webp")
+							img(src="./img/home-slider/heder-slide-2@md.jpg", alt="#", loading="lazy")
 					li.swiper-slide.work__slider__item
-						img(src="./img/heder-slide-3.jpg", alt="#")
+						picture
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.jpg")
+							source(srcset="./img/home-slider/heder-slide-3@md.avif", type="image/avif")
+							source(srcset="./img/home-slider/heder-slide-3@md.webp", type="image/webp")
+							img(src="./img/home-slider/heder-slide-3@md.jpg", alt="#", loading="lazy")
 
 				.work__slider__button-wrap
 					button.work__slider__button-prev.button-arrow.button-arrow--right(type="button")
@@ -50,28 +68,28 @@ block main
 				p.list-links
 					a(href="#") Интерьер
 					a(href="#") Комплектация проекта
-				img(src="img/portfolio/portfolio-1.jpg", alt="#")
+				img(src="img/home-portfolio/portfolio-1.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Интерьер
-				img(src="img/portfolio/portfolio-2.jpg", alt="#")
+				img(src="img/home-portfolio/portfolio-2.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Экстерьер
-				img(src="img/portfolio/portfolio-3.jpg", alt="#")
+				img(src="img/home-portfolio/portfolio-3.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
 			li.portfolio__item
 				p.list-links
 					a(href="#") Интерьер
-				img(src="img/portfolio/portfolio-4.jpg", alt="#")
+				img(src="img/home-portfolio/portfolio-4.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
@@ -79,7 +97,7 @@ block main
 				p.list-links
 					a(href="#") Интерьер
 					a(href="#") Комплектация проекта
-				img(src="img/portfolio/portfolio-5.jpg", alt="#")
+				img(src="img/home-portfolio/portfolio-5.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
