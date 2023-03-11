@@ -1,17 +1,28 @@
 .portfolio__title {
 	position: relative;
-	max-width: 660px;
+	margin: 0 0 32px;
 	font-weight: 600;
-	font-size: 48px;
+	font-size: 32px;
 	line-height: 1;
 	font-family: 'Stolzl', Arial, Helvetica, sans-serif;
+
+	@media (min-width: @min-md) {
+		font-size: 48px;
+	}
+
+	@media (min-width: @min-lg) {
+		margin-bottom: 48px;
+	}
 }
 
 .portfolio__title-animate {
 	position: relative;
 	display: block;
-	height: 48px;
-	overflow: hidden;
+	height: 32px;
+
+	@media (min-width: @min-md) {
+		height: 48px;
+	}
 
 	& span {
 		--duration: 20s;
@@ -28,37 +39,92 @@
 
 		&:nth-child(2) {
 			animation-delay: calc(var(--duration)/3);
-			}
-
-			&:nth-child(3) {
-				animation-delay: calc(var(--duration)/3 * 2);
-				}
-			}
 		}
 
-		@keyframes portfolio-title {
-			0% {
-				transform: rotateX(90deg) translateY(100%);
-				opacity: 0;
-			}
-
-			1% {
-				transform: rotateX(0) translateY(0);
-				opacity: 1;
-			}
-
-			32% {
-				transform: rotateX(0) translateY(0);
-				opacity: 1;
-			}
-
-			33% {
-				transform: rotateX(90deg) translateY(-100%);
-				opacity: 0;
-			}
-
-			100% {
-				transform: rotateX(90deg) translateY(-100%);
-				opacity: 0;
-			}
+		&:nth-child(3) {
+			animation-delay: calc(var(--duration)/3 * 2);
 		}
+	}
+}
+
+@keyframes portfolio-title {
+	0% {
+		transform: rotateX(90deg) translateY(100%);
+		opacity: 0;
+	}
+
+	1% {
+		transform: rotateX(0) translateY(0);
+		opacity: 1;
+	}
+
+	32% {
+		transform: rotateX(0) translateY(0);
+		opacity: 1;
+	}
+
+	33% {
+		transform: rotateX(90deg) translateY(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: rotateX(90deg) translateY(-100%);
+		opacity: 0;
+	}
+}
+
+.portfolio__subtitle {
+	margin: 0 0 32px;
+	font-size: 12px;
+	line-height: 15px;
+
+	@media (min-width: @min-sm) {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.portfolio__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.portfolio__item {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	& img {
+		display: block;
+		width: 100%;
+		border-radius: 12px;
+		margin-bottom: 12px;
+	}
+}
+
+.portfolio__list-links {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.portfolio__list-title {
+	max-width: 73%;
+	margin: 0;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	margin-right: 12px;
+
+	@media (min-width: @min-lg) {
+		font-size: 24px;
+		line-height: 1;
+	}
+}
