@@ -83,7 +83,7 @@ function clean() {
 // copy
 function copy() {
 	return src([
-			"./src/fonts/*.{woff2,woff}",
+			"./src/fonts/*.{woff2,woff,otf}",
 			"./src/*.ico",
 			"./src/img/**/*.{svg,jpg,jpeg,png,webp,avif}",
 			"./src/favicons/*",
