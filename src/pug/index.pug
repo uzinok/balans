@@ -63,46 +63,48 @@ block main
 				span комфорта
 		h2.portfolio__subtitle Наше портфолио - наша гордость. Потому что каждая работа сделана с душой.
 
-		ul.portfolio__list
-			li.portfolio__item
+		.portfolio__list(role="list")
+			.portfolio__grid
+				.portfolio__item(role="listitem")
+					p.portfolio__list-links.list-links
+						a(href="#") Интерьер
+						a(href="#") Комплектация проекта
+					img(src="img/home-portfolio/portfolio-1.jpg", alt="#")
+					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
+					a.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden Подробнее
+				.portfolio__item(role="listitem")
+					p.portfolio__list-links.list-links
+						a(href="#") Интерьер
+					img(src="img/home-portfolio/portfolio-2.jpg", alt="#")
+					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
+					a.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden Подробнее
+			.portfolio__item(role="listitem")
 				p.portfolio__list-links.list-links
-					a(href="#") Интерьер
-					a(href="#") Комплектация проекта
-				img(src="img/home-portfolio/portfolio-1.jpg", alt="#")
-				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow.button-arrow--left(href="#")
-					span.visually-hidden Подробнее
-			li.portfolio__item
-				p.list-links
-					a(href="#") Интерьер
-				img(src="img/home-portfolio/portfolio-2.jpg", alt="#")
-				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow.button-arrow--left(href="#")
-					span.visually-hidden Подробнее
-			li.portfolio__item
-				p.list-links
 					a(href="#") Экстерьер
 				img(src="img/home-portfolio/portfolio-3.jpg", alt="#")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
-			li.portfolio__item
-				p.list-links
-					a(href="#") Интерьер
-				img(src="img/home-portfolio/portfolio-4.jpg", alt="#")
-				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow.button-arrow--left(href="#")
-					span.visually-hidden Подробнее
-			li.portfolio__item
-				p.list-links
-					a(href="#") Интерьер
-					a(href="#") Комплектация проекта
-				img(src="img/home-portfolio/portfolio-5.jpg", alt="#")
-				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-				a.button-arrow.button-arrow--left(href="#")
-					span.visually-hidden Подробнее
+			.portfolio__grid
+				.portfolio__item(role="listitem")
+					p.portfolio__list-links.list-links
+						a(href="#") Интерьер
+					img(src="img/home-portfolio/portfolio-4.jpg", alt="#")
+					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
+					a.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden Подробнее
+				.portfolio__item(role="listitem")
+					p.portfolio__list-links.list-links
+						a(href="#") Интерьер
+						a(href="#") Комплектация проекта
+					img(src="img/home-portfolio/portfolio-5.jpg", alt="#")
+					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
+					a.button-arrow.button-arrow--left(href="#")
+						span.visually-hidden Подробнее
 
-		a.button.button--big(href="#") Смотреть все работы
+		a.portfolio__button.button(href="#") Смотреть все работы
 
 	section.services
 		h2.visually-hidden Услуги
