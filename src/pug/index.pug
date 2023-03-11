@@ -7,16 +7,18 @@ block variables
 	- var idPage = "index"
 
 block main
-	header.main__header
+	header.main__header.container
 		p.main__header-title Баланс
 			sup ®
-		p.main__header-subtitle Баланс жизни начинается с пространства
 
-		p.list-links
-			a(href="#") Экстерьер
-			a(href="#") Визуализация
-			a(href="#") Интерьер
-			a(href="#") Дизайн
+		.main__header-right
+			p.main__header-subtitle Баланс жизни начинается с пространства
+
+			p.main__header-list-links.list-links
+				a(href="#") Экстерьер
+				a(href="#") Визуализация
+				a(href="#") Интерьер
+				a(href="#") Дизайн
 
 	section
 		h2.visually-hidden Последние работы

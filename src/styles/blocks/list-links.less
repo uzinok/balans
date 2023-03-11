@@ -1,17 +1,32 @@
 .list-links {
+	--offset-link: 4px;
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin: 0;
+	margin-right: calc(var(--offset-link)*-1);
+
+	@media (min-width: @min-md) {
+		--offset-link: 8px;
+	}
 
 	& a {
 		display: block;
-		margin-right: 8px;
-		margin-bottom: 8px;
+		margin-right: var(--offset-link);
+		margin-bottom: var(--offset-link);
+		padding: 4px 10px 5px;
 		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
 		color: inherit;
 		text-transform: lowercase;
 		text-decoration: none;
 		border: 1px solid #212121;
 		border-radius: 12px;
+
+		@media (min-width: @min-lg) {
+
+			font-size: 14px;
+			line-height: 17px;
+		}
 	}
 }
