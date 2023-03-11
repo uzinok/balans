@@ -1,4 +1,4 @@
-.portfolio{
+.portfolio {
 	padding-bottom: 74px;
 
 	@media (min-width: @min-lg) {
@@ -12,7 +12,7 @@
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 1;
-	font-family: 'Stolzl', Arial, Helvetica, sans-serif;
+	font-family: 'Random Grotesque Standard', Arial, Helvetica, sans-serif;
 
 	@media (min-width: @min-md) {
 		font-size: 48px;
@@ -104,7 +104,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: flex-start;
 	margin-bottom: 24px;
+
+	@media (min-width: @min-md) {
+		margin-bottom: 56px;
+	}
 
 	& img {
 		display: block;
@@ -137,6 +142,7 @@
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 16px;
+	font-family: 'Random Grotesque Standard', Arial, Helvetica, sans-serif;
 
 	@media (min-width: @min-md) {
 		width: calc(100% - 12px - 74px);
