@@ -105,20 +105,25 @@
         <h2 class="visually-hidden">Услуги</h2>
         <p class="services__content"><span class="services__left">Мы занимаемся</span><span class="services__right"><span>дизайн проектами<a class="services__button-arrow button-arrow button-arrow--left" href="#"><span class="visually-hidden">подробнее</span></a></span><span>визуализацией интерьера<a class="services__button-arrow button-arrow button-arrow--left" href="#"><span class="visually-hidden">подробнее</span></a></span><span>визуализацией экстерьера<a class="services__button-arrow button-arrow button-arrow--left" href="#"><span class="visually-hidden">подробнее</span></a></span><span>комплектацией проекта<a class="services__button-arrow button-arrow button-arrow--left" href="#"><span class="visually-hidden">подробнее</span></a></span><span>авторским надзором<a class="services__button-arrow button-arrow button-arrow--left" href="#"><span class="visually-hidden">подробнее</span></a></span></span></p>
       </section>
-      <section class="feedback">
+      <section class="feedback container">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <form class="feedback__content" action="#">
-          <p class="feedback__title">Обсудим ваш проект?</p>
-          <p class="feedback__subtitle">Оставьте заявку и мы свяжемся с вами :)</p>
-          <label class="visually-hidden" for="name">Напишите своё имя</label>
-          <input class="feedback__input" id="name" type="text" name="name" placeholder="Ваше имя" required="required"/>
-          <label class="visually-hidden" for="phone">Напишите номер телефона</label>
-          <input class="feedback__input" id="phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required="required"/>
-          <label>
-            <input class="visually-hidden feedback__checkbox" type="checkbox"/>Даю согласие на обработку персональных данных
-          </label>
-          <button class="feedback__submit" type="submit">Оставить заявку</button>
-        </form>
+        <div class="feedback__content">
+          <form class="feedback__form" action="#">
+            <div class="feedback__form-top">
+              <p class="feedback__title">Обсудим ваш проект?</p>
+              <h3 class="feedback__subtitle">Оставьте заявку и мы свяжемся с вами :)</h3>
+            </div>
+            <div class="feedback__form-left">
+              <label class="visually-hidden" for="name">Напишите своё имя</label>
+              <input class="feedback__input" id="name" type="text" name="name" placeholder="Ваше имя" required="required"/>
+              <label class="visually-hidden" for="phone">Напишите номер телефона</label>
+              <input class="feedback__input" id="phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required="required"/>
+              <input class="visually-hidden feedback__checkbox" type="checkbox"/>
+              <label class="feedback__label-checkbox">Даю согласие на&nbsp;обработку персональных данных</label>
+            </div>
+            <button class="feedback__submit" type="submit">Оставить заявку</button>
+          </form>
+        </div>
         <div class="feedback__content">
           <h2 class="contacts__title">Или, вот наши контакты</h2>
           <address><a href="tel:+79179567889">8 (917) 956-78-89</a><a href="mailto:balans@yandex.ru">balans@yandex.ru</a></address>
