@@ -1,19 +1,40 @@
-.feedback__content {
+.feedback {
+	padding-bottom: 64px;
+
+	@media (min-width: @min-lg) {
+		padding-bottom: 132px;
+	}
+}
+.feedback__wrap {
 	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 12px;
+
+		@media (min-width: @min-md) {
+			margin-bottom: 24px;
+		}
+	}
 }
 
-.feedback__form {
+.feedback__content {
 	padding: 12px 12px 14px;
 	color: var(--bg-body);
 	background-color: var(--color-text);
 	border-radius: 12px;
 
 	@media (min-width: @min-lg) {
+		padding: 24px;
+	}
+}
+
+.feedback__form {
+
+	@media (min-width: @min-lg) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: flex-end;
-		padding: 24px;
 	}
 }
 
@@ -31,6 +52,10 @@
 	@media (min-width: @min-lg) {
 		max-width: 350px;
 		font-size: 48px;
+	}
+
+	&--contact {
+		margin-bottom: 24px;
 	}
 }
 
@@ -128,6 +153,7 @@
 
 .feedback__submit {
 	box-sizing: border-box;
+	margin-top: 23px;
 	padding: 8px 14px 9px;
 	font-weight: 600;
 	font-size: 14px;
@@ -138,7 +164,6 @@
 	border: 1px solid #F5F4EF;
 	border-radius: 24px;
 	appearance: none;
-	margin-top: 23px;
 
 	@media (max-width: @max-lg) {
 		display: block;
@@ -153,7 +178,7 @@
 		margin-right: 24px;
 	}
 
-	.feedback__content {
+	.feedback__wrap {
 		display: flex;
 
 		&:first-of-type {
@@ -167,6 +192,83 @@
 				background-size: cover;
 				border-radius: 12px;
 			}
+		}
+	}
+}
+
+.feedback__address {
+	display: flex;
+	margin-bottom: 64px;
+	font-style: normal;
+
+	& .feedback__link {
+		margin-right: 12px;
+
+		@media (min-width: @min-lg) {
+			margin-right: 54px;
+		}
+	}
+}
+
+.feedback__link {
+	font-size: 14px;
+	line-height: 17px;
+	color: inherit;
+	text-decoration: none;
+}
+
+.feedback__wrap:nth-of-type(2) {
+
+	@media (min-width: @min-sm) {
+		display: flex;
+
+		.feedback__content {
+			min-width: 300px;
+		}
+	}
+
+	@media (min-width: 850px) {
+		.feedback__content {
+			width: 45.232%;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 172px;
+			margin-left: 24px;
+			background-image: url(../../img/feedback/feedback-3.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-radius: 12px;
+		}
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 126px;
+		margin-bottom: 12px;
+		background-image: url(../../img/feedback/feedback-2.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-radius: 12px;
+
+		@media (min-width: @min-sm) {
+			height: auto;
+			margin-right: 12px;
+			margin-bottom: 0;
+		}
+
+		@media (min-width: @min-lg) {
+			width: 32.26%;
+		}
+
+		@media (min-width: 850px) {
+			margin-right: 24px;
 		}
 	}
 }

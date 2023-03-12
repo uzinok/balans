@@ -1,0 +1,42 @@
+.soc-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 24px);
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	gap: 12px;
+
+	@media (min-width: @min-lg) {
+		gap: 24px;
+	}
+}
+
+.soc-list__link {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border-radius: 50%;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-color: var(--bg-body);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		mask-size: 24px;
+	}
+
+	&--vk::before {
+		mask-image: url(../../img/social/vk.svg);
+	}
+
+	&--yt::before {
+		mask-image: url(../../img/social/yt.svg);
+	}
+
+	&--tg::before {
+		mask-image: url(../../img/social/tg.svg);
+	}
+}
