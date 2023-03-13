@@ -3,6 +3,10 @@ block variables
 <!DOCTYPE html>
 html(lang="ru")
 	head
+		//- удалить
+		meta(name="robots", content="noindex")
+		//- /удалить
+
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
@@ -12,14 +16,17 @@ html(lang="ru")
 		link(rel="stylesheet", href="styles/main.min.css")
 
 	body.no-js
-		h1.visually-hidden #{pageHeading}
+		//- удалить
+		noindex
 
-		include header.pug
+			h1.visually-hidden #{pageHeading}
+
+			include header.pug
 
 
-		main.main
-			block main
+			main.main
+				block main
 
-		include footer.pug
+			include footer.pug
 
-		script(src="scripts/main.js")
+			script(src="scripts/main.js")

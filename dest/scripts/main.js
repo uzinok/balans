@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
   document.body.classList.remove('no-js');
   if (this.document.querySelector('.swiper')) {
     var swiper = new Swiper('.swiper', {
-      // Optional parameters
+      loop: true,
       spaceBetween: 4,
       initialSlide: 1,
       breakpoints: {
