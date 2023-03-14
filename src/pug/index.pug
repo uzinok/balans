@@ -21,12 +21,12 @@ block main
 				a(href="#") Дизайн
 
 	section.work
-		.container.work__container
+		.work__container
 			h2.visually-hidden Последние работы
 
 			.work__slider
-				ul.work__slider__list
-					li.work__slider__item
+				.work__slider__list(role="list")
+					.work__slider__item(role="listitem")
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp")
@@ -34,7 +34,7 @@ block main
 							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#")
-					li.work__slider__item
+					.work__slider__item(role="listitem")
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.webp", type="image/webp")
@@ -42,7 +42,7 @@ block main
 							source(srcset="./img/home-slider/heder-slide-2@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-2@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-2@md.jpg", alt="#")
-					li.work__slider__item
+					.work__slider__item(role="listitem")
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.webp", type="image/webp")
@@ -51,7 +51,7 @@ block main
 							source(srcset="./img/home-slider/heder-slide-3@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-3@md.jpg", alt="#")
 
-				.work__slider__button-wrap
+				.container.work__slider__button-wrap
 					button.work__slider__button-prev.button-arrow.button-arrow--right(type="button")
 					button.work__slider__button-next.button-arrow.button-arrow--left(type="button")
 

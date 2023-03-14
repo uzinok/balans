@@ -4,6 +4,8 @@
 
 .work__container {
 	padding-bottom: 64px;
+	max-width: calc(var(--page-max-width) + var(--offset-page) * 2);
+	margin: 0 auto;
 
 	@media (min-width: @min-lg) {
 		padding-bottom: 84px;
@@ -19,12 +21,15 @@
 	}
 }
 
-.work__slider {
+.slick-list {
 	overflow: visible;
 }
 
 .work__slider__item {
+	padding: 0 var(--offset-slider);
+
 	& img {
+		width: 100%;
 		display: block;
 		border-radius: 10px;
 	}
@@ -34,8 +39,8 @@
 	text-align: center;
 
 	@media (min-width: @min-md) {
-		text-align: right;
 		padding-right: calc(178px - var(--offset-page));
+		text-align: right;
 	}
 }
 

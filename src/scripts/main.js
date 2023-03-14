@@ -2,23 +2,35 @@ window.addEventListener('load', function() {
 	// document.body.classList.remove('no-js');
 
 	if (document.querySelector('.work__slider__list')) {
-		$('.work__slider__list').slick({
-			infinite: true,
-			prevArrow: $('.work__slider__button-prev'),
-			nextArrow: $('.work__slider__button-next'),
 
-			lazyLoad: 'progressive',
-			mobileFirst: true,
-			centerMode: true,
-			// centerPadding: '4px',
+			const bodyStyles = window.getComputedStyle(document.body);
+			const offsetPage = +bodyStyles.getPropertyValue('--offset-page').replace("px", "");
+			const offsetSlider = +bodyStyles.getPropertyValue('--offset-slider').replace("px", "");
 
-			responsive: [{
-				breakpoint: 768,
-				settings: {
-					// centerPadding: '12px'
-				}
-			}]
-		});
+			const sliderParam = {
+				infinite: true,
+				prevArrow: $('.work__slider__button-prev'),
+				nextArrow: $('.work__slider__button-next'),
+
+				lazyLoad: 'progressive',
+				mobileFirst: true,
+				centerMode: true,
+				centerPadding: '10px',
+
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						centerPadding: '26px'
+					}
+				},{
+					breakpoint: 990,
+					settings: {
+						centerPadding: '58px'
+					}
+				}]
+			}
+			$('.work__slider__list').slick(sliderParam);
+
 	}
 
 	// if (document.querySelector('.swiper')) {

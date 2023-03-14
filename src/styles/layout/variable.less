@@ -23,12 +23,17 @@
 	--offset-page-top: 12px;
 	--offset-page: 12px;
 
+	--page-max-width: 1152px;
 	@media (min-width: @min-md) {
 		--offset-page: 32px;
 		--offset-page-top: 13px;
 	}
-
 	@media (min-width: @min-lg) {
 		--offset-page: 64px;
+	}
+
+	--offset-slider: 2px;
+	@media (min-width: 768px) {
+		--offset-slider: 6px;
 	}
 }
