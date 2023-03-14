@@ -120,14 +120,6 @@
 		height: 100%;
 		transition: transform var(--transition-duration) var(--transition-function);
 		object-fit: cover;
-
-		@media (min-width: @min-md) {
-			height: 390px;
-		}
-
-		@media (min-width: @min-lg) {
-			height: 490px;
-		}
 	}
 }
 
@@ -203,6 +195,7 @@
 }
 
 @media (min-width: 600px) {
+
 	.portfolio__grid .portfolio__item:last-child .portfolio__link-img,
 	.portfolio__grid:nth-of-type(4n+1) .portfolio__item:first-child .portfolio__link-img {
 		aspect-ratio: 331/245;

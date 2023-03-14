@@ -1,11 +1,7 @@
 window.addEventListener('load', function() {
-	// document.body.classList.remove('no-js');
+	document.body.classList.remove('no-js');
 
 	if (document.querySelector('.work__slider__list')) {
-
-			const bodyStyles = window.getComputedStyle(document.body);
-			const offsetPage = +bodyStyles.getPropertyValue('--offset-page').replace("px", "");
-			const offsetSlider = +bodyStyles.getPropertyValue('--offset-slider').replace("px", "");
 
 			const sliderParam = {
 				infinite: true,

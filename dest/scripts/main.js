@@ -1,12 +1,8 @@
 "use strict";
 
 window.addEventListener('load', function () {
-  // document.body.classList.remove('no-js');
-
+  document.body.classList.remove('no-js');
   if (document.querySelector('.work__slider__list')) {
-    var bodyStyles = window.getComputedStyle(document.body);
-    var offsetPage = +bodyStyles.getPropertyValue('--offset-page').replace("px", "");
-    var offsetSlider = +bodyStyles.getPropertyValue('--offset-slider').replace("px", "");
     var sliderParam = {
       infinite: true,
       prevArrow: $('.work__slider__button-prev'),
