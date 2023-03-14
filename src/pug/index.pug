@@ -24,9 +24,9 @@ block main
 		.container.work__container
 			h2.visually-hidden Последние работы
 
-			.work__slider.swiper
-				ul.swiper-wrapper.work__slider__list
-					li.swiper-slide.work__slider__item
+			.work__slider
+				ul.work__slider__list
+					li.work__slider__item
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp")
@@ -34,7 +34,7 @@ block main
 							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#")
-					li.swiper-slide.work__slider__item
+					li.work__slider__item
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.webp", type="image/webp")
@@ -42,7 +42,7 @@ block main
 							source(srcset="./img/home-slider/heder-slide-2@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-2@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-2@md.jpg", alt="#")
-					li.swiper-slide.work__slider__item
+					li.work__slider__item
 						picture
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.webp", type="image/webp")
@@ -162,4 +162,5 @@ block main
 						a.soc-list__link.soc-list__link--tg(href="#")
 							span.visually-hidden Канал в телеграм
 
-	script(src="./static/swiper/swiper-bundle.min.js")
+	script(src="./static/jquery/jquery-3.6.4.min.js")
+	script(src="./static/slick-slider/slick.min.js")
