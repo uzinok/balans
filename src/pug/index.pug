@@ -28,32 +28,49 @@ block main
 				.work__slider__list(role="list")
 					.work__slider__item(role="listitem")
 						picture
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.avif", type="image/avif")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.webp", type="image/webp")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.jpg")
+
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.jpg")
+
 							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#")
 					.work__slider__item(role="listitem")
 						picture
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.avif", type="image/avif")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.webp", type="image/webp")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.jpg")
+
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.webp", type="image/webp")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-2@xl.jpg")
+
 							source(srcset="./img/home-slider/heder-slide-2@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-2@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-2@md.jpg", alt="#")
 					.work__slider__item(role="listitem")
 						picture
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-3@xxl.avif", type="image/avif")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-3@xxl.webp", type="image/webp")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-3@xxl.jpg")
+
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.avif", type="image/avif")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.webp", type="image/webp")
 							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-3@xl.jpg")
+
 							source(srcset="./img/home-slider/heder-slide-3@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-3@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-3@md.jpg", alt="#")
 
 				.container.work__slider__button-wrap
 					button.work__slider__button-prev.button-arrow.button-arrow--right(type="button")
+						span.visually-hidden Назад
 					button.work__slider__button-next.button-arrow.button-arrow--left(type="button")
+						span.visually-hidden Вперёд
 
 	section.portfolio.container
 		p.portfolio__title Мы создаем пространства <br> с&#160;ощущением
@@ -71,7 +88,13 @@ block main
 						a(href="#") Комплектация проекта
 					a.portfolio__link-img(href="#", aria-label="подробнее")
 						picture
-							img(src="img/home-portfolio/portfolio-1.jpg", alt="#", loading="lazy")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.jpg")
+
+							source(srcset="img/home-portfolio/portfolio-1@md.avif", type="image/avif")
+							source(srcset="img/home-portfolio/portfolio-1@md.webp", type="image/webp")
+							img(src="img/home-portfolio/portfolio-1@md.jpg", alt="#", loading="lazy")
 					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 					a.button-arrow.button-arrow--left(href="#")
 						span.visually-hidden Подробнее
@@ -80,7 +103,13 @@ block main
 						a(href="#") Интерьер
 					a.portfolio__link-img(href="#", aria-label="подробнее")
 						picture
-							img(src="img/home-portfolio/portfolio-2.jpg", alt="#", loading="lazy")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.jpg")
+
+							source(srcset="img/home-portfolio/portfolio-2@md.avif", type="image/avif")
+							source(srcset="img/home-portfolio/portfolio-2@md.webp", type="image/webp")
+							img(src="img/home-portfolio/portfolio-2@md.jpg", alt="#", loading="lazy")
 					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 					a.button-arrow.button-arrow--left(href="#")
 						span.visually-hidden Подробнее
@@ -89,7 +118,13 @@ block main
 					a(href="#") Экстерьер
 				a.portfolio__link-img(href="#", aria-label="подробнее")
 					picture
-						img(src="img/home-portfolio/portfolio-3.jpg", alt="#", loading="lazy")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.avif", type="image/avif")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.webp", type="image/webp")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.jpg")
+
+						source(srcset="img/home-portfolio/portfolio-3@md.avif", type="image/avif")
+						source(srcset="img/home-portfolio/portfolio-3@md.webp", type="image/webp")
+						img(src="img/home-portfolio/portfolio-3@md.jpg", alt="#", loading="lazy")
 				h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 				a.button-arrow.button-arrow--left(href="#")
 					span.visually-hidden Подробнее
@@ -99,7 +134,13 @@ block main
 						a(href="#") Интерьер
 					a.portfolio__link-img(href="#", aria-label="подробнее")
 						picture
-							img(src="img/home-portfolio/portfolio-3.jpg", alt="#", loading="lazy")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.jpg")
+
+							source(srcset="img/home-portfolio/portfolio-4@md.avif", type="image/avif")
+							source(srcset="img/home-portfolio/portfolio-4@md.webp", type="image/webp")
+							img(src="img/home-portfolio/portfolio-4@md.jpg", alt="#", loading="lazy")
 					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 					a.button-arrow.button-arrow--left(href="#")
 						span.visually-hidden Подробнее
@@ -109,7 +150,13 @@ block main
 						a(href="#") Комплектация проекта
 					a.portfolio__link-img(href="#", aria-label="подробнее")
 						picture
-							img(src="img/home-portfolio/portfolio-3.jpg", alt="#", loading="lazy")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.avif", type="image/avif")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.webp", type="image/webp")
+							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.jpg")
+
+							source(srcset="img/home-portfolio/portfolio-5@md.avif", type="image/avif")
+							source(srcset="img/home-portfolio/portfolio-5@md.webp", type="image/webp")
+							img(src="img/home-portfolio/portfolio-5@md.jpg", alt="#", loading="lazy")
 					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 					a.button-arrow.button-arrow--left(href="#")
 						span.visually-hidden Подробнее
@@ -150,8 +197,8 @@ block main
 					input#name.feedback__input(type="text", name="name", placeholder="Ваше имя", required)
 					label.visually-hidden(for="phone") Напишите номер телефона
 					input#phone.feedback__input(type="tel", name="phone", placeholder="+7 (___) ___-__-__", required)
-					input.visually-hidden.feedback__checkbox(type="checkbox")
-					label.feedback__label-checkbox Даю согласие на&nbsp;обработку персональных данных
+					input#checkbox.visually-hidden.feedback__checkbox(type="checkbox")
+					label.feedback__label-checkbox(for="checkbox") Даю согласие на&nbsp;обработку персональных данных
 				button.feedback__submit(type="submit") Оставить заявку
 
 		.feedback__wrap
