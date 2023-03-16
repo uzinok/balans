@@ -1,0 +1,30 @@
+.link-animate {
+	overflow: hidden;
+
+	& span {
+		display: block;
+		transition: opacity var(--transition-duration) var(--transition-function), transform var(--transition-duration) var(--transition-function);
+	}
+
+	& .link-animate-hover {
+		opacity: 0;
+	}
+
+	& .link-animate-view {
+		opacity: 1;
+	}
+
+	&:hover {
+		& span {
+			transform: translateY(-100%);
+		}
+
+		& .link-animate-hover {
+			opacity: 1;
+		}
+
+		& .link-animate-view {
+			opacity: 0;
+		}
+	}
+}
