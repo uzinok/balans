@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" width="1000" height="1000" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#E31E24;}
-	.st1{fill:#2B2A29;}
-</style>
-<path class="st0" d="M101.3,512l47-59.9l47,59.9H101.3z"/>
-<path class="st1" d="M211,217.3c15.2-23.2,15.7-45.2,0.6-69.3c-24.4-39-64.3-44.8-110.5-15.9L0,195.3l148.4,237.6l102.5-64
-	c49.9-31.2,62.8-74.7,36.7-116.4C269.7,223.6,242.9,208.7,211,217.3L211,217.3z M176.7,178.3c12.1,19.3,8.9,36.9-18.9,54.3
-	l-58.4,36.5L61.3,208l58-36.3C146.8,154.5,163.8,157.6,176.7,178.3L176.7,178.3z M227,332.8l-63.1,39.4l-42.4-67.9l62.8-39.2
-	c31.2-19.5,49.2-13.3,62.8,8.4C259.8,293.9,258.2,313.3,227,332.8z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1000" height="1000" style="enable-background:new 0 0 512 512" xml:space="preserve"><path d="m101.3 512 47-59.9 47 59.9h-94z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#e31e24"/><path d="M211 217.3c15.2-23.2 15.7-45.2.6-69.3-24.4-39-64.3-44.8-110.5-15.9L0 195.3l148.4 237.6 102.5-64c49.9-31.2 62.8-74.7 36.7-116.4-17.9-28.9-44.7-43.8-76.6-35.2zm-34.3-39c12.1 19.3 8.9 36.9-18.9 54.3l-58.4 36.5L61.3 208l58-36.3c27.5-17.2 44.5-14.1 57.4 6.6zM227 332.8l-63.1 39.4-42.4-67.9 62.8-39.2c31.2-19.5 49.2-13.3 62.8 8.4 12.7 20.4 11.1 39.8-20.1 59.3z" style="fill:#2b2a29"/></svg>

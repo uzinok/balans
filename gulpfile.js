@@ -27,6 +27,7 @@ const postImport = require('postcss-import');
 const postUrl = require('postcss-url');
 const postMediaMinMax = require('postcss-media-minmax');
 const csso = require('postcss-csso');
+const gcmq = require('gulp-group-css-media-queries');
 
 
 // scripts
@@ -118,6 +119,7 @@ function styles() {
 			errorHandler: onError
 		}))
 		.pipe(less())
+		.pipe(gcmq())
 		.pipe(postcss([
 			postMediaMinMax(),
 			csso(),
