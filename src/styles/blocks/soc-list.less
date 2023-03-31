@@ -23,6 +23,7 @@
 		width: 32px;
 		height: 32px;
 		background-color: var(--bg-body);
+		transition: background-color var(--transition-duration) var(--transition-function);
 		mask-repeat: no-repeat;
 		mask-position: center;
 		mask-size: 32px;
@@ -39,4 +40,8 @@
 	&--tg::before {
 		mask-image: url(../../img/social/tg.svg);
 	}
+}
+
+.soc-list__link:hover::before {
+	background-color: var(--color-accent);
 }

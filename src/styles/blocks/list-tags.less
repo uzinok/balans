@@ -24,11 +24,15 @@
 		background-color: var(--bg-body);
 		border: 1px solid #212121;
 		border-radius: 12px;
+		transition: color var(--transition-duration) var(--transition-function);
 
 		@media (min-width: @min-lg) {
-
 			font-size: 14px;
 			line-height: 17px;
+		}
+
+		&:hover {
+			color: var(--color-accent);
 		}
 	}
 }

@@ -28,19 +28,6 @@ block main
 				.work__slider__list(role="list")
 					.work__slider__item(role="listitem")
 						picture
-							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.avif", type="image/avif", width="100%", height="100%")
-							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.webp", type="image/webp", width="100%", height="100%")
-							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.jpg", width="100%", height="100%")
-
-							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif", width="100%", height="100%")
-							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp", width="100%", height="100%")
-							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.jpg", width="100%", height="100%")
-
-							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
-							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
-							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#", width="100%", height="100%")
-					.work__slider__item(role="listitem")
-						picture
 							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.avif", type="image/avif", width="100%", height="100%")
 							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.webp", type="image/webp", width="100%", height="100%")
 							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-2@xxl.jpg", width="100%", height="100%")
@@ -65,6 +52,19 @@ block main
 							source(srcset="./img/home-slider/heder-slide-3@md.avif", type="image/avif")
 							source(srcset="./img/home-slider/heder-slide-3@md.webp", type="image/webp")
 							img(src="./img/home-slider/heder-slide-3@md.jpg", alt="#", width="100%", height="100%")
+					.work__slider__item(role="listitem")
+						picture
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.avif", type="image/avif", width="100%", height="100%")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.webp", type="image/webp", width="100%", height="100%")
+							source(media="(min-width: 1294px)", srcset="./img/home-slider/heder-slide-1@xxl.jpg", width="100%", height="100%")
+
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.avif", type="image/avif", width="100%", height="100%")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.webp", type="image/webp", width="100%", height="100%")
+							source(media="(min-width: 768px)", srcset="./img/home-slider/heder-slide-1@xl.jpg", width="100%", height="100%")
+
+							source(srcset="./img/home-slider/heder-slide-1@md.avif", type="image/avif")
+							source(srcset="./img/home-slider/heder-slide-1@md.webp", type="image/webp")
+							img(src="./img/home-slider/heder-slide-1@md.jpg", alt="#", width="100%", height="100%")
 
 				.container.work__slider__button-wrap
 					button.work__slider__button-prev.button-arrow.button-arrow--right(type="button")
@@ -82,90 +82,68 @@ block main
 
 		.portfolio__list(role="list")
 			.portfolio__grid
+				.portfolio__item(role="listitem")
+					picture.portfolio__picture
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.avif", type="image/avif")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.webp", type="image/webp")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.jpg")
+
+						source(srcset="img/home-portfolio/portfolio-1@md.avif", type="image/avif")
+						source(srcset="img/home-portfolio/portfolio-1@md.webp", type="image/webp")
+						img(src="img/home-portfolio/portfolio-1@md.jpg", alt="#", loading="lazy")
+
+					a(href="#")
+						h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
 
 				.portfolio__item(role="listitem")
+					picture.portfolio__picture
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.avif", type="image/avif")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.webp", type="image/webp")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.jpg")
+
+						source(srcset="img/home-portfolio/portfolio-2@md.avif", type="image/avif")
+						source(srcset="img/home-portfolio/portfolio-2@md.webp", type="image/webp")
+						img(src="img/home-portfolio/portfolio-2@md.jpg", alt="#", loading="lazy")
 					a(href="#")
-						p.portfolio__list-tags.list-tags
-							span Интерьер
-							span Комплектация проекта
-						picture.portfolio__picture
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.avif", type="image/avif")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.webp", type="image/webp")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-1@xl.jpg")
-
-							source(srcset="img/home-portfolio/portfolio-1@md.avif", type="image/avif")
-							source(srcset="img/home-portfolio/portfolio-1@md.webp", type="image/webp")
-							img(src="img/home-portfolio/portfolio-1@md.jpg", alt="#", loading="lazy")
 						h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-						span.button-arrow.button-arrow--left
-							span.visually-hidden Подробнее
-
-				.portfolio__item(role="listitem")
-					a(href="#")
-						p.portfolio__list-tags.list-tags
-							span Интерьер
-						picture.portfolio__picture
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.avif", type="image/avif")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.webp", type="image/webp")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-2@xl.jpg")
-
-							source(srcset="img/home-portfolio/portfolio-2@md.avif", type="image/avif")
-							source(srcset="img/home-portfolio/portfolio-2@md.webp", type="image/webp")
-							img(src="img/home-portfolio/portfolio-2@md.jpg", alt="#", loading="lazy")
-						h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-						span.button-arrow.button-arrow--left
-							span.visually-hidden Подробнее
 
 			.portfolio__item(role="listitem")
-				a(href="#")
-					p.portfolio__list-tags.list-tags
-						span Экстерьер
-					picture.portfolio__picture
-						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.avif", type="image/avif")
-						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.webp", type="image/webp")
-						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.jpg")
+				picture.portfolio__picture
+					source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.avif", type="image/avif")
+					source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.webp", type="image/webp")
+					source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-3@xl.jpg")
 
-						source(srcset="img/home-portfolio/portfolio-3@md.avif", type="image/avif")
-						source(srcset="img/home-portfolio/portfolio-3@md.webp", type="image/webp")
-						img(src="img/home-portfolio/portfolio-3@md.jpg", alt="#", loading="lazy")
+					source(srcset="img/home-portfolio/portfolio-3@md.avif", type="image/avif")
+					source(srcset="img/home-portfolio/portfolio-3@md.webp", type="image/webp")
+					img(src="img/home-portfolio/portfolio-3@md.jpg", alt="#", loading="lazy")
+				a(href="#")
 					h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-					span.button-arrow.button-arrow--left
-						span.visually-hidden Подробнее
 
 			.portfolio__grid
 
 				.portfolio__item(role="listitem")
-					a(href="#")
-						p.portfolio__list-tags.list-tags
-							span Интерьер
-						picture.portfolio__picture
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.avif", type="image/avif")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.webp", type="image/webp")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.jpg")
+					picture.portfolio__picture
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.avif", type="image/avif")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.webp", type="image/webp")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-4@xl.jpg")
 
-							source(srcset="img/home-portfolio/portfolio-4@md.avif", type="image/avif")
-							source(srcset="img/home-portfolio/portfolio-4@md.webp", type="image/webp")
-							img(src="img/home-portfolio/portfolio-4@md.jpg", alt="#", loading="lazy")
+						source(srcset="img/home-portfolio/portfolio-4@md.avif", type="image/avif")
+						source(srcset="img/home-portfolio/portfolio-4@md.webp", type="image/webp")
+						img(src="img/home-portfolio/portfolio-4@md.jpg", alt="#", loading="lazy")
+					a(href="#")
 						h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-						span.button-arrow.button-arrow--left
-							span.visually-hidden Подробнее
 
 				.portfolio__item(role="listitem")
-					a(href="#")
-						p.portfolio__list-tags.list-tags
-							span Интерьер
-							span Комплектация проекта
-						picture.portfolio__picture
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.avif", type="image/avif")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.webp", type="image/webp")
-							source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.jpg")
+					picture.portfolio__picture
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.avif", type="image/avif")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.webp", type="image/webp")
+						source(media="(min-width: 768px)", srcset="img/home-portfolio/portfolio-5@xl.jpg")
 
-							source(srcset="img/home-portfolio/portfolio-5@md.avif", type="image/avif")
-							source(srcset="img/home-portfolio/portfolio-5@md.webp", type="image/webp")
-							img(src="img/home-portfolio/portfolio-5@md.jpg", alt="#", loading="lazy")
+						source(srcset="img/home-portfolio/portfolio-5@md.avif", type="image/avif")
+						source(srcset="img/home-portfolio/portfolio-5@md.webp", type="image/webp")
+						img(src="img/home-portfolio/portfolio-5@md.jpg", alt="#", loading="lazy")
+					a(href="#")
 						h3.portfolio__list-title Интерьер квартиры в жилом комплексе «колизей» для молодой пары
-						span.button-arrow.button-arrow--left
-							span.visually-hidden Подробнее
 
 		a.portfolio__button.button(href="#") Смотреть все работы
 
@@ -211,8 +189,12 @@ block main
 			.feedback__content
 				h3.feedback__title.feedback__title--contact Или, вот наши контакты
 				address.feedback__address
-					a.feedback__link(href="tel:+79179567889") 8 (917) 956-78-89
-					a.feedback__link(href="mailto:balans@yandex.ru") balans@yandex.ru
+					a.feedback__link.link-animate(href="tel:+79179567889")
+						span.link-animate-view 8 (917) 956-78-89
+						span.link-animate-hover 8 (917) 956-78-89
+					a.feedback__link.link-animate(href="mailto:balans@yandex.ru")
+						span.link-animate-view balans@yandex.ru
+						span.link-animate-hover balans@yandex.ru
 
 				ul.soc-list
 					li.soc-list__item
