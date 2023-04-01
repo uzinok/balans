@@ -1,0 +1,21 @@
+extends templates/template.pug
+
+block variables
+	//- переменная для template.pug
+	- var pageTitle = "Баланс жизни начинается с пространства"
+	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
+	- var idPage = "portfolio"
+
+block main
+	header.main__header.container
+		p.main__header-title Баланс
+			sup ®
+
+		.main__header-right
+			p.main__header-subtitle Баланс жизни начинается с пространства
+
+			p.main__header-list-tags.list-tags
+				a(href="#") Экстерьер
+				a(href="#") Визуализация
+				a(href="#") Интерьер
+				a(href="#") Дизайн

@@ -1,7 +1,7 @@
 header.header
 	.header__container.container
 
-		a.header__logo(href="index.html")
+		a.header__logo(href="index.html", aria-current=idPage == 'index' ? 'page' : 'false')
 			img(src="img/logo/logo_header.svg" alt="Баланс", width="82" height="47")
 
 		button.header__nav-toggle(type="button")
@@ -9,21 +9,7 @@ header.header
 
 		nav.nav
 			ul.nav__list
-
-				li.nav__item
-					a.nav__link.link-animate(href="#")
-						span.link-animate-view Портфолио
-						span.link-animate-hover(aria-hidden="true") Портфолио
-
-				li.nav__item
-					a.nav__link.link-animate(href="#")
-						span.link-animate-view Услуги
-						span.link-animate-hover(aria-hidden="true") Услуги
-
-				li.nav__item
-					a.nav__link.link-animate(href="#")
-						span.link-animate-view Контакты
-						span.link-animate-hover(aria-hidden="true") Контакты
+				include nav-items.pug
 
 		.header__nav-right.header__right
 			a.header__link.link-animate(href="tel:+79997606778")
