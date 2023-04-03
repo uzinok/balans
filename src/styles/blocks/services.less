@@ -1,16 +1,19 @@
 .services {
+	padding-top: 18px;
 	padding-bottom: 74px;
 
 	@media (min-width: @min-lg) {
+		padding-top: 42px;
+		padding-right: calc(var(--offset-page) - 8px);
 		padding-bottom: 132px;
 		padding-left: calc(var(--offset-page) - 8px);
-		padding-right: calc(var(--offset-page) - 8px);
 	}
 }
 
 .services__content {
-	font-weight: 600;
+	margin: 0 0 0;
 	padding: 0 3px;
+	font-weight: 600;
 	font-size: 32px;
 	line-height: 1;
 	font-family: 'Random Grotesque Standard', Arial, Helvetica, sans-serif;
@@ -40,8 +43,8 @@
 
 	& > span {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		align-items: center;
 
 		&:not(:last-child) {
 			margin-bottom: 32px;
@@ -77,10 +80,10 @@
 		&::after {
 			content: '';
 			display: inline-block;
-			vertical-align: middle;
-			height: 1px;
 			width: 51px;
+			height: 1px;
 			margin: 0 27px;
+			vertical-align: middle;
 			background-color: var(--color-text);
 		}
 	}

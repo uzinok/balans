@@ -1,8 +1,12 @@
 header.header
 	.header__container.container
 
-		a.header__logo(href="index.html", aria-current=idPage == 'index' ? 'page' : 'false')
-			img(src="img/logo/logo_header.svg" alt="Баланс", width="82" height="47")
+		if idPage == 'index'
+			a.header__logo(href="index.html", aria-current='page')
+				img(src="img/logo/logo_header.svg" alt="Баланс", width="82" height="47")
+		else
+			a.header__logo(href="index.html")
+				img(src="img/logo/logo_header.svg" alt="Баланс", width="82" height="47")
 
 		button.header__nav-toggle(type="button")
 			span.visually-hidden Показать меню
@@ -13,5 +17,5 @@ header.header
 
 		.header__nav-right.header__right
 			a.header__link.link-animate(href="tel:+79997606778")
-					span.link-animate-view 8 (999) 760-67-78
-					span.link-animate-hover(aria-hidden="true") 8 (999) 760-67-78
+				span.link-animate-view 8 (999) 760-67-78
+				span.link-animate-hover(aria-hidden="true") 8 (999) 760-67-78

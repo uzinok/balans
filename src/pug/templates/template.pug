@@ -1,6 +1,7 @@
 block variables
 
 - var URLPortfolio = 'portfolio.html'
+include mixin.pug
 
 <!DOCTYPE html>
 html(lang="ru")
@@ -19,7 +20,7 @@ html(lang="ru")
 			link(rel="stylesheet", href="./static/slick-slider/slick.css")
 		link(rel="stylesheet", href="styles/main.min.css")
 
-	body.no-js
+	body(class=idPage == 'index' ? 'no-js index' : 'no-js')
 		h1.visually-hidden #{pageHeading}
 
 		include header.pug

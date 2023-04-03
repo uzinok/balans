@@ -7,6 +7,17 @@ block variables
 	- var idPage = "portfolio"
 
 block main
-	header.main__header.container
+	section.portfolio.container
+		header.page-header
+			h2.visually-hidden Портфолио
+			p.portfolio__title Наши работы - это всегда
+				span.block про современность и эстетику
+			p.list-tags
+				a(href="#") Все
+				a(href="#") Bнтерьеры
+				a(href="#") 3D визуализация
+				a(href="#") Экстерьер
+				a(href="#") Предметное моделирование
+		include templates/index-portfolio__list.pug
 
 	include templates/feedback.pug
