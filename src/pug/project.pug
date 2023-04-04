@@ -1,0 +1,54 @@
+extends templates/template.pug
+
+block variables
+	//- переменная для template.pug
+	- var pageTitle = "Баланс жизни начинается с пространства"
+	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
+	- var idPage = "project"
+
+block main
+	section.container
+		header.page-header
+			h2.visually-hidden Портфолио
+			p.title Интерьер квартиры в жилом
+				span.block комплексе  «Колизей»
+
+			.info
+				h2.visually-hidden Информация
+
+				picture.info__media
+					source(srcset="./img/project/project-1.avif", type="image/avif")
+					source(srcset="./img/project/project-1.webp", type="image/webp")
+					img(src="./img/project/project-1.jpg", alt="#")
+
+				.info__wrap
+					dl.info__list
+						div.info__item
+							dt категория:
+							dd дизайн интерьера
+						div.info__item
+							dt стиль:
+							dd лофт
+						div.info__item
+							dt общая площадь:
+							dd 36,6 м2
+						div.info__item
+							dt дата реализации:
+							dd 2023
+						div.info__item
+							dt время реализации:
+							dd 2 месяца
+						div.info__item
+							dt локация:
+							dd Москва
+
+					.info__text
+						h3 О проекте:
+
+						p А ещё сделанные на базе интернет-аналитики выводы, инициированные исключительно синтетически, призваны к ответу.
+
+						p Таким образом, начало повседневной работы по формированию позиции требует определения и уточнения распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, независимые государства объективно рассмотрены соответствующими инстанциями.
+
+						p Равным образом, курс на социально-ориентированный национальный проект создаёт предпосылки для прогресса профессионального сообщества. Не следует, однако, забывать, что укрепление и развитие внутренней структуры способствует повышению качества новых принципов формирования материально-технической и кадровой базы.
+
+	include templates/feedback.pug
