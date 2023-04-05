@@ -1,0 +1,43 @@
+.planning__container > div {
+	overflow: hidden;
+}
+
+.planning__list {
+	margin-right: -24px;
+
+	@media (min-width: @min-md) {
+		width: calc(53.82% + 48px);
+	}
+
+	& .slick-list {
+		overflow: visible;
+	}
+}
+
+.planning__item {
+	flex-grow: 1;
+	padding-right: 24px;
+	aspect-ratio: 331 / 245;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 12px;
+	}
+
+	& picture {
+		transition: width var(--transition-duration) var(--transition-function);
+	}
+}
+
+.planning__item:not(.slick-active) picture {
+	display: block;
+	height: 100%;
+	width: calc(76.71% - 24px);
+}
+
+.planning__item.slick-active picture {
+	width: 100%;
+}

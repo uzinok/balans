@@ -29,6 +29,21 @@ window.addEventListener('load', function() {
 
 	}
 
+	if (document.querySelector('.planning__list')) {
+
+			const sliderParam = {
+				infinite: false,
+				prevArrow: $('.planning__slider__button-prev'),
+				nextArrow: $('.planning__slider__button-next'),
+
+				lazyLoad: 'progressive',
+				mobileFirst: true,
+				centerPadding: '60px',
+			}
+			$('.planning__list').slick(sliderParam);
+
+	}
+
 	// if (document.querySelector('.swiper')) {
 	// 	const swiper = new Swiper('.swiper', {
 	// 		loop: true,
