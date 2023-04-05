@@ -25,6 +25,17 @@ window.addEventListener('load', function () {
     };
     $('.work__slider__list').slick(sliderParam);
   }
+  if (document.querySelector('.planning__list')) {
+    var _sliderParam = {
+      infinite: false,
+      prevArrow: $('.planning__slider__button-prev'),
+      nextArrow: $('.planning__slider__button-next'),
+      lazyLoad: 'progressive',
+      mobileFirst: true,
+      centerPadding: '60px'
+    };
+    $('.planning__list').slick(_sliderParam);
+  }
 
   // if (document.querySelector('.swiper')) {
   // 	const swiper = new Swiper('.swiper', {

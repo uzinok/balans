@@ -88,6 +88,28 @@ block main
 			]
 		])
 
+	section.planning
+		.planning__container.container
+			h2.title Планировки квартиры
+			div
+				.planning__list(role="list")
+					.planning__item(role="listitem")
+						picture
+							img(src="img/project/planning-1.png", alt="#")
+					.planning__item(role="listitem")
+						picture
+							img(src="img/project/planning-1.png", alt="#")
+					.planning__item(role="listitem")
+						picture
+							img(src="img/project/planning-1.png", alt="#")
+
+
+		.container.planning__slider__button-wrap
+			button.planning__slider__button-prev.button-arrow.button-arrow--right(type="button")
+				span.visually-hidden Назад
+			button.planning__slider__button-next.button-arrow.button-arrow--left(type="button")
+				span.visually-hidden Вперёд
+
 	section.job-project
 		.job-project__container.container
 			h2.title Над проектом работали
@@ -105,3 +127,7 @@ block main
 			a.button(href="#") Следующий проект
 
 	include templates/feedback.pug
+
+	link(rel="stylesheet", href="./static/slick-slider/slick.css")
+	script(src="./static/jquery/jquery-3.6.4.min.js")
+	script(src="./static/slick-slider/slick.min.js")
