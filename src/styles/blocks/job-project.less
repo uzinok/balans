@@ -1,0 +1,65 @@
+.job-project {
+	padding-bottom: 40px;
+
+	@media (min-width: @min-lg) {
+		padding-bottom: 120px;
+	}
+}
+
+.job-project__container {
+	padding-bottom: 40px;
+
+	@media (min-width: @min-lg) {
+		padding-bottom: 120px;
+	}
+}
+
+.job-project__list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.job-project__item {
+	font-size: 14px;
+	line-height: 17px;
+
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	& span {
+		display: block;
+		margin-bottom: 4px;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: @min-lg) {
+	.job-project__container {
+		display: flex;
+		justify-content: space-between;
+		align-content: start;
+
+		& .title {
+			max-width: 466px;
+		}
+	}
+
+	.job-project__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		max-width: 500px;
+		gap: 24px 32px;
+	}
+
+	.job-project__item {
+		&:not(:last-child) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.job-project__button-wrap {
+	text-align: center;
+}
