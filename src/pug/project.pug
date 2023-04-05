@@ -71,5 +71,37 @@ block main
 			],
 		])
 
+	section.container
+		.section-header
+			h2.title Один из основных нюансов проекта - совмещенная  с&nbsp;залом кухня
+			p А ещё сделанные на базе интернет-аналитики выводы, инициированные исключительно синтетически, призваны к ответу. А ещё сделанные на базе интернет-аналитики выводы, инициированные исключительно синтетически, призваны к ответу.
+		+gallery ([
+			[
+				'home-portfolio',
+				'portfolio-1@xl',
+				'#',
+			],
+			[
+				'home-portfolio',
+				'portfolio-2@xl',
+				'#',
+			]
+		])
+
+	section.job-project
+		.job-project__container.container
+			h2.title Над проектом работали
+			ul.job-project__list
+				li.job-project__item
+					span Унан Аветисян&ensp;
+					| Дизайнер интерьера
+				li.job-project__item
+					span Унан Аветисян&ensp;
+					| Дизайнер интерьера
+				li.job-project__item
+					span Екатерина Гончарова&ensp;
+					| Архитектор
+		.container.job-project__button-wrap
+			a.button(href="#") Следующий проект
 
 	include templates/feedback.pug
