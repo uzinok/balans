@@ -1,0 +1,16 @@
+.section-header {
+	padding-bottom: 32px;
+
+	@media (min-width: @min-md) {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		padding-bottom: 40px;
+		column-gap: 20px;
+	}
+
+	& p {
+		margin: 0;
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
