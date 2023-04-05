@@ -25,19 +25,22 @@
 		object-fit: cover;
 		object-position: center;
 		border-radius: 12px;
+		transition: width 1s var(--transition-function);
 	}
 
 	& picture {
-		transition: width var(--transition-duration) var(--transition-function);
+		transition: width 1s var(--transition-function);
 	}
 }
 
+.planning__item:not(.slick-active) img,
 .planning__item:not(.slick-active) picture {
 	display: block;
 	height: 100%;
 	width: calc(76.71% - 24px);
 }
 
+.planning__item.slick-active img,
 .planning__item.slick-active picture {
 	width: 100%;
 }

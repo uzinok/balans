@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
 	if (document.querySelector('.planning__list')) {
 
 			const sliderParam = {
-				infinite: false,
+				// infinite: false,
 				prevArrow: $('.planning__slider__button-prev'),
 				nextArrow: $('.planning__slider__button-next'),
 
