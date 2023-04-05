@@ -79,7 +79,43 @@ block main
 				span уюта&#160;
 				span комфорта
 		h2.portfolio__subtitle Наше портфолио - наша гордость. <br aria-hidden="true"> Потому что каждая работа сделана с душой.
-		include templates/index-portfolio__list.pug
+		+gallery ([
+			[
+				'home-portfolio',
+				'portfolio-1@xl',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'home-portfolio',
+				'portfolio-2@xl',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для не молодой пары'
+			],
+			[
+				'home-portfolio',
+				'portfolio-3@xl',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для очень молодой пары'
+			],
+			[
+				'home-portfolio',
+				'portfolio-4@xl',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'home-portfolio',
+				'portfolio-5@xl',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			]
+		])
 		a.portfolio__button.button(href=`${URLPortfolio}`) Смотреть все работы
 
 	section.services.container

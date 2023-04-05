@@ -18,6 +18,65 @@ block main
 				a(href="#") 3D визуализация
 				a(href="#") Экстерьер
 				a(href="#") Предметное моделирование
-		include templates/index-portfolio__list.pug
+	section.container
+		h2.visually-hidden Галлерея
+		+gallery ([
+			[
+				'portfolio',
+				'portfolio-1',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-2',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для не молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-3',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для очень молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-4',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-5',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-6',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-7',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'portfolio',
+				'portfolio-8',
+				'#',
+				'project.html',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			]
+		])
 
 	include templates/feedback.pug
