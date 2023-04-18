@@ -5,6 +5,7 @@ block variables
 	- var pageTitle = "Баланс жизни начинается с пространства"
 	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
 	- var idPage = "project"
+	- var preloadMainJs = true
 
 block main
 	section.container
@@ -128,6 +129,12 @@ block main
 
 	include templates/feedback.pug
 
-	link(rel="stylesheet", href="./static/slick-slider/slick.css")
-	script(src="./static/jquery/jquery-3.6.4.min.js")
-	script(src="./static/slick-slider/slick.min.js")
+
+	block head
+		link(rel="preload", href="./static/slick-slider/slick.css", as="style")
+		link(rel="stylesheet", href="./static/slick-slider/slick.css")
+		link(rel="preload", src="./static/jquery/jquery-3.6.4.min.js", as="script")
+		link(rel="preload", src="./static/slick-slider/slick.min.js", as="script")
+	block footer
+		script(src="./static/jquery/jquery-3.6.4.min.js")
+		script(src="./static/slick-slider/slick.min.js")
