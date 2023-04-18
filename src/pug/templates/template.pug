@@ -9,14 +9,19 @@ html(lang="ru")
 		//- удалить
 		meta(name="robots", content="noindex")
 		//- /удалить
-
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
 		link(rel="shortcut icon", href="./favicon.ico", type="image/x-icon")
 		link(rel="icon", href="./img/favicons/favicon-32x32.png",  sizes="32x32", type="image/png")
 		title #{pageTitle}
+		link(rel="preload", href="./fonts/Montserrat-Regular.woff2", as="font", type="font/woff2", crossorigin)
+		link(rel="preload", href="./fonts/Montserrat-SemiBold.woff2", as="font", type="font/woff2", crossorigin)
+		link(rel="preload", href="./fonts/RG-StandardSemibold.woff2", as="font", type="font/woff2", crossorigin)
 		link(rel="stylesheet", href="styles/main.min.css")
+		block head
+		if preloadMainJs == true
+			link(rel="preload", src="scripts/main.min.js", as="script")
 
 	body(class=idPage == 'index' ? 'no-js index' : 'no-js')
 		h1.visually-hidden #{pageHeading}
@@ -28,5 +33,5 @@ html(lang="ru")
 			block main
 
 		include footer.pug
-
-		script(src="scripts/main.js")
+		block footer
+		script(src="scripts/main.min.js")
