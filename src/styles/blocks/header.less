@@ -92,7 +92,7 @@
 @media (max-width: @max-md) {
 	.header__nav {
 		position: fixed;
-		top: 76px;
+		top: 0;
 		right: 0;
 		z-index: 1;
 		width: fit-content;
@@ -103,7 +103,7 @@
 		& .nav__list {
 			display: flex;
 			flex-direction: column;
-			padding: 7px 46px 33px 15px;
+			padding: var(--offset-page-top) 46px 33px 15px;
 		}
 
 		& .nav__link {
@@ -121,8 +121,10 @@
 			position: relative;
 		}
 
-		& .header__nav {
-			display: block;
+		.header__nav-wrap:focus-within {
+			& .header__nav {
+				display: block;
+			}
 		}
 	}
 }
