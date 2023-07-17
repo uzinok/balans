@@ -17,9 +17,15 @@
 @media (max-width: @max-md) {
 
 	.footer__nav {
+		display: block;
 		grid-column-end: -1;
 		grid-column-start: 1;
 		grid-row-start: 1;
+
+		& .nav__link {
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 
 	.footer__nav-list {
