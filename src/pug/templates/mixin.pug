@@ -12,14 +12,34 @@ mixin gallery (array)
 				if arr[3]
 					h3
 						a(href=`${arr[3]}`) #{arr[4]}
+
 mixin social(dark)
-		ul.soc-list(class=dark == true ? 'soc-list--dark' : '')
-			li.soc-list__item
-				a.soc-list__link.soc-list__link--yt(href="#")
-					span.visually-hidden Канал на ютубе
-			li.soc-list__item
-				a.soc-list__link.soc-list__link--vk(href="#")
-					span.visually-hidden Группа в вк
-			li.soc-list__item
-				a.soc-list__link.soc-list__link--tg(href="#")
-					span.visually-hidden Канал в телеграм
+	ul.soc-list(class=dark == true ? 'soc-list--dark' : '')
+		li.soc-list__item
+			a.soc-list__link.soc-list__link--yt(href="#")
+				span.visually-hidden Канал на ютубе
+		li.soc-list__item
+			a.soc-list__link.soc-list__link--vk(href="#")
+				span.visually-hidden Группа в вк
+		li.soc-list__item
+			a.soc-list__link.soc-list__link--tg(href="#")
+				span.visually-hidden Канал в телеграм
+
+mixin services__list(array)
+	ul.service
+		each arr in array
+			li.service__item
+				.service__content
+					a(href=`${arr[1]}`)
+						h3.service__heading #{arr[0]}
+					p #{arr[2]}
+
+					dl.service__dl
+						dt.service__dt стоимость
+						dd.service__dd #{arr[3]}
+
+						dt.service__dt сроки выполнения
+						dd.service__dd #{arr[4]}
+
+				picture.service__picture
+					img(src=`img/${arr[5]}/${arr[6]}`, alt=`${arr[7]}`)
