@@ -25,21 +25,24 @@ mixin social(dark)
 			a.soc-list__link.soc-list__link--tg(href="#")
 				span.visually-hidden Канал в телеграм
 
-mixin services__list(array)
-	ul.service
+mixin favor__list(array)
+	ul.favor
 		each arr in array
-			li.service__item
-				.service__content
-					a(href=`${arr[1]}`)
-						h3.service__heading #{arr[0]}
-					p #{arr[2]}
+			li.favor__item
+				.favor__container.container
+					picture.favor__picture
+						img(src=`img/${arr[8]}/${arr[9]}`, alt=`${arr[10]}`)
 
-					dl.service__dl
-						dt.service__dt стоимость
-						dd.service__dd #{arr[3]}
+					.favor__content
+						a(href=`${arr[1]}`)
+							h3.favor__heading #{arr[0]}
+						p #{arr[2]}
 
-						dt.service__dt сроки выполнения
-						dd.service__dd #{arr[4]}
+						dl.favor__dl
+							div
+								dt.favor__dt стоимость
+								dd.favor__dd #{arr[3]} #[span #{arr[4]}] #{arr[5]}
 
-				picture.service__picture
-					img(src=`img/${arr[5]}/${arr[6]}`, alt=`${arr[7]}`)
+							div
+								dt.favor__dt сроки выполнения
+								dd.favor__dd #[span #{arr[6]}]  #{arr[7]}
