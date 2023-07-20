@@ -142,7 +142,7 @@
 
 	body:not(.no-js) {
 		& .header__nav {
-			position: fixed;
+			position: absolute;
 			top: 76px;
 			display: block;
 			transform: translateX(0);
@@ -159,7 +159,7 @@ body {
 
 	&::before {
 		content: '';
-		position: fixed;
+		position: absolute;
 		top: 76px;
 		right: 0;
 		bottom: 0;
@@ -176,6 +176,6 @@ body {
 	&::before {
 		background-color: rgba(0, 0, 0, 0.2);
 		transform: translateX(0);
-		backdrop-filter: blur(2px);
+		backdrop-filter: blur(1px);
 	}
 }
