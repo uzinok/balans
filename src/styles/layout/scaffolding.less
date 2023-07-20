@@ -6,14 +6,21 @@ body {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto 1fr auto;
+	box-sizing: border-box;
+	max-width: 100%;
 	min-width: 320px;
 	min-height: 100vh;
 	margin: 0;
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	color: var(--color-text);
 	background-color: var(--bg-body);
-	box-sizing: border-box;
-	width: 100%;
+}
+
+a[href],
+button {
+	&:active {
+		opacity: 0.7;
+	}
 }
 
 img {

@@ -99,11 +99,11 @@ function nav() {
       toggle.classList.remove('header__nav-toggle--close');
       toggle.setAttribute('aria-expanded', true);
     }, 10);
-    scrollLock();
     listener();
   }
   toggle.addEventListener('click', function () {
     if (toggle.classList.contains('header__nav-toggle--close')) {
+      scrollLock();
       openNav();
     } else {
       closeNav();
