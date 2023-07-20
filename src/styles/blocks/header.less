@@ -97,11 +97,13 @@
 		width: fit-content;
 		background-color: var(--bg-body);
 		transition: transform var(--transition-duration) var(--transition-function);
+		padding: var(--offset-page-top) 46px 33px 15px;
+		display: flex;
+		flex-direction: column;
 
 		& .nav__list {
 			display: flex;
 			flex-direction: column;
-			padding: var(--offset-page-top) 46px 33px 15px;
 		}
 
 		& .nav__link {
@@ -121,7 +123,9 @@
 
 		.header__nav-wrap:focus-within {
 			& .header__nav {
-				display: block;
+				display: flex;
+				height: calc(100vh - 76px);
+				box-sizing: border-box;
 			}
 		}
 	}
@@ -144,8 +148,10 @@
 		& .header__nav {
 			position: absolute;
 			top: 76px;
-			display: block;
+			display: flex;
 			transform: translateX(0);
+			height: calc(100vh - 76px);
+			box-sizing: border-box;
 		}
 
 		& .header__nav-toggle--close + .header__nav {
