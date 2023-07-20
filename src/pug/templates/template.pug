@@ -1,7 +1,7 @@
 block variables
 
 - var URLPortfolio = 'portfolio.html'
-- var URLServices = 'services.html'
+- var URLFavor = 'favor.html'
 include mixin.pug
 
 <!DOCTYPE html>
@@ -16,9 +16,9 @@ html(lang="ru")
 		link(rel="shortcut icon", href="./favicon.ico", type="image/x-icon")
 		link(rel="icon", href="./img/favicons/favicon-32x32.png",  sizes="32x32", type="image/png")
 		title #{pageTitle}
-		link(rel="preload", href="./fonts/Montserrat-Regular.woff2", as="font", type="font/woff2", crossorigin)
-		link(rel="preload", href="./fonts/Montserrat-SemiBold.woff2", as="font", type="font/woff2", crossorigin)
-		link(rel="preload", href="./fonts/RG-StandardSemibold.woff2", as="font", type="font/woff2", crossorigin)
+		link(rel="preload", href="./fonts/Montserrat-Regular.woff2", as="font", type="font/woff2")
+		link(rel="preload", href="./fonts/Montserrat-SemiBold.woff2", as="font", type="font/woff2")
+		link(rel="preload", href="./fonts/RG-StandardSemibold.woff2", as="font", type="font/woff2")
 		link(rel="stylesheet", href="styles/main.min.css")
 		block head
 		if preloadMainJs == true
