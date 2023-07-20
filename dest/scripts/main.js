@@ -38,6 +38,26 @@ window.addEventListener('load', function () {
     $('.planning__list').slick(_sliderParam);
   }
 });
+var isMobile = {
+  Android: function Android() {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function BlackBerry() {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function iOS() {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function Opera() {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function Windows() {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function any() {
+    return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+  }
+};
 var scrollHeight;
 function nav() {
   var toggle = document.querySelector('.header__nav-toggle');
@@ -115,7 +135,7 @@ function scrollLock(un) {
   }
   scrollHeight = window.scrollY || window.pageYOffset;
   document.body.style.top = "-".concat(scrollHeight, "px");
-  document.body.style.paddingRight = window.innerWidth - document.body.offsetWidth + 'px';
+  if (!isMobile.any()) document.body.style.paddingRight = window.innerWidth - document.body.offsetWidth + 'px';
   setTimeout(function () {
     document.body.style.position = 'fixed';
   }, 0);
