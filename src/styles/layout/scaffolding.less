@@ -44,9 +44,9 @@ h1 {
 }
 
 .container {
+	box-sizing: border-box;
 	width: 100%;
 	max-width: var(--page-max-width);
-	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 0 var(--offset-page);
 }
@@ -78,5 +78,30 @@ h1 {
 @media (min-width: 990px) {
 	.title {
 		margin-bottom: 48px;
+	}
+}
+
+.one-image {
+	display: block;
+
+	& img {
+		display: block;
+		border-radius: 12px;
+	}
+}
+
+.title-page {
+	margin: 0 0 24px;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 32px;
+	font-family: "Random Grotesque Standard", Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+
+	@media (min-width: @min-md) {
+		margin-bottom: 40px;
+		font-size: 48px;
+		line-height: 48px;
+		letter-spacing: -0.48px;
 	}
 }
