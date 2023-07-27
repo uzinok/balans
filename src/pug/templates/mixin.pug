@@ -1,13 +1,14 @@
-mixin gallery (array)
-	ul.gallery
+//- gallery--revert
+mixin gallery (array, MyClass)
+	ul.gallery(class=MyClass == 'gallery--revert' ? 'gallery--revert' : '', class=MyClass == 'gallery--only-small' ? 'gallery--only-small' : '')
 		each arr in array
 			li.gallery__item
 				picture
 					//- source(media="(min-width: 768px)", srcset=srcset=`img/${arr[0]}/${arr[1]}@xl.avif`, type="image/avif")
 					//- source(media="(min-width: 768px)", srcset=srcset=`img/${arr[0]}/${arr[1]}@xl.webp`, type="image/webp")
 					//- source(media="(min-width: 768px)", srcset=`img/${arr[0]}/${arr[1]}@xl.jpg`)
-					source(srcset=`img/${arr[0]}/${arr[1]}.avif`, type="image/avif")
-					source(srcset=`img/${arr[0]}/${arr[1]}.webp`, type="image/webp")
+					//- source(srcset=`img/${arr[0]}/${arr[1]}.avif`, type="image/avif")
+					//- source(srcset=`img/${arr[0]}/${arr[1]}.webp`, type="image/webp")
 					img(src=`img/${arr[0]}/${arr[1]}.jpg`, alt=`${arr[2]}`)
 				if arr[3]
 					h3
@@ -25,24 +26,24 @@ mixin social(dark)
 			a.soc-list__link.soc-list__link--tg(href="#")
 				span.visually-hidden Канал в телеграм
 
-mixin favor__list(array)
-	ul.favor
+mixin list_services(array)
+	ul.list-services
 		each arr in array
-			li.favor__item
-				.favor__container.container
-					picture.favor__picture
+			li.list-services__item
+				.list-services__container.container
+					picture.list-services__picture
 						img(src=`img/${arr[8]}/${arr[9]}`, alt=`${arr[10]}`, width='466', height='345', loading='lazy')
 
-					.favor__content
+					.list-services__content
 						a(href=`${arr[1]}`)
-							h3.favor__heading #{arr[0]}
+							h3.list-services__heading #{arr[0]}
 						p #{arr[2]}
 
-						dl.favor__dl
+						dl.list-services__dl
 							div
-								dt.favor__dt стоимость
-								dd.favor__dd #{arr[3]} #[span #{arr[4]}] #{arr[5]}
+								dt.list-services__dt стоимость
+								dd.list-services__dd #{arr[3]} #[span #{arr[4]}] #{arr[5]}
 
 							div
-								dt.favor__dt сроки выполнения
-								dd.favor__dd #[span #{arr[6]}]  #{arr[7]}
+								dt.list-services__dt сроки выполнения
+								dd.list-services__dd #[span #{arr[6]}]  #{arr[7]}

@@ -1,0 +1,77 @@
+extends templates/template.pug
+
+block variables
+	//- переменная для template.pug
+	- var pageTitle = "Баланс жизни начинается с пространства"
+	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
+	- var idPage = "architectural_design"
+	- var preloadMainJs = false
+
+block main
+	section
+		header.main__header.container
+			h2.title Архитектурное проектирование
+			.main__header-right
+				p.main__header-subtitle Проектирование объектов любой сложности
+
+			picture.one-image
+				source(media="(min-width: 768px)", srcset="./img/architectural_design/architectural_design.jpg", width="1153", height="490")
+				img(src="./img/architectural_design/architectural_design@md.jpg", alt="#", width="768", height="490")
+
+	section.container.gallery-wrap
+		h2.title-page Примеры работ
+
+		+gallery ([
+			[
+				'architectural_design',
+				'architectural_design-1',
+				'#',
+				'#',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'architectural_design',
+				'architectural_design-2',
+				'#',
+				'#',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			]
+		], 'gallery--revert')
+
+		a.portfolio__button.button(href=`${URLPortfolio}`) Смотреть все работы
+
+	section.container
+		h2.title-page Виды услуг
+
+		+gallery ([
+			[
+				'architectural_design',
+				'architectural_design-3',
+				'#',
+				'#',
+				'Дизайн проект жилых зданий'
+			],
+			[
+				'architectural_design',
+				'architectural_design-4',
+				'#',
+				'#',
+				'Инж'
+			],
+			[
+				'architectural_design',
+				'architectural_design-5',
+				'#',
+				'#',
+				'АР+КР'
+			],
+			[
+				'architectural_design',
+				'architectural_design-6',
+				'#',
+				'#',
+				'Авторский надзор'
+			]
+		], 'gallery--only-small')
+
+	include templates/feedback.pug

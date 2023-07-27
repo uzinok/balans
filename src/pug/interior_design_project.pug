@@ -1,0 +1,63 @@
+extends templates/template.pug
+
+block variables
+	//- переменная для template.pug
+	- var pageTitle = "Баланс жизни начинается с пространства"
+	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
+	- var idPage = "interior_design_project"
+	- var preloadMainJs = false
+
+block main
+	section
+		header.main__header.container
+			h2.title Дизайн проект интерьера
+			.main__header-right
+				p.main__header-subtitle Мы&nbsp;создаем проекты как для #[b жилых], так и&nbsp;для #[b общественный&nbsp;помещений]
+
+			picture.one-image
+				source(media="(min-width: 768px)", srcset="./img/interior_design_project/interior_design_project.jpg", width="1153", height="490")
+				img(src="./img/interior_design_project/interior_design_project@md.jpg", alt="#", width="768", height="490")
+
+	section.container.gallery-wrap
+		h2.title-page Примеры работ
+
+		+gallery ([
+			[
+				'interior_design_project',
+				'interior_design_project-1',
+				'#',
+				'#',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			],
+			[
+				'interior_design_project',
+				'interior_design_project-2',
+				'#',
+				'#',
+				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
+			]
+		], 'gallery--revert')
+
+		a.portfolio__button.button(href=`${URLPortfolio}`) Смотреть все работы
+
+	section.container
+		h2.title-page Виды услуг
+
+		+gallery ([
+			[
+				'interior_design_project',
+				'interior_design_project-3',
+				'#',
+				'#',
+				'Интерьеры жилых помещений'
+			],
+			[
+				'interior_design_project',
+				'interior_design_project-4',
+				'#',
+				'#',
+				'Интерьеры общественных помещений'
+			]
+		], 'gallery--only-small')
+
+	include templates/feedback.pug
