@@ -18,7 +18,7 @@ block main
 				source(media="(min-width: 768px)", srcset="./img/architectural_design/architectural_design.jpg", width="1153", height="490")
 				img(src="./img/architectural_design/architectural_design@md.jpg", alt="#", width="768", height="490")
 
-	section.container
+	section.container.gallery-wrap
 		h2.title-page Примеры работ
 
 		+gallery ([
@@ -37,5 +37,41 @@ block main
 				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
 			]
 		], 'gallery--revert')
+
+		a.portfolio__button.button(href=`${URLPortfolio}`) Смотреть все работы
+
+	section.container.gallery-wrap
+		h2.title-page Примеры работ
+
+		+gallery ([
+			[
+				'architectural_design',
+				'architectural_design-3',
+				'#',
+				'#',
+				'Дизайн проект жилых зданий'
+			],
+			[
+				'architectural_design',
+				'architectural_design-4',
+				'#',
+				'#',
+				'Инж'
+			],
+			[
+				'architectural_design',
+				'architectural_design-5',
+				'#',
+				'#',
+				'АР+КР'
+			],
+			[
+				'architectural_design',
+				'architectural_design-6',
+				'#',
+				'#',
+				'Авторский надзор'
+			]
+		], 'gallery--only-small')
 
 	include templates/feedback.pug

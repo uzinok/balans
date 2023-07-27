@@ -1,6 +1,6 @@
 //- gallery--revert
 mixin gallery (array, MyClass)
-	ul.gallery(class=MyClass == 'gallery--revert' ? 'gallery--revert' : '')
+	ul.gallery(class=MyClass == 'gallery--revert' ? 'gallery--revert' : '', class=MyClass == 'gallery--only-small' ? 'gallery--only-small' : '')
 		each arr in array
 			li.gallery__item
 				picture
