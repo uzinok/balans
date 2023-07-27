@@ -4,34 +4,34 @@ block variables
 	//- переменная для template.pug
 	- var pageTitle = "Баланс жизни начинается с пространства"
 	- var pageHeading = '"Баланс" - студия дизайна жилых помещений'
-	- var idPage = "architectural_design"
+	- var idPage = "interior_design_project"
 	- var preloadMainJs = false
 
 block main
 	section
 		header.main__header.container
-			h2.title Архитектурное проектирование
+			h2.title Дизайн проект интерьера
 			.main__header-right
-				p.main__header-subtitle Проектирование объектов любой сложности
+				p.main__header-subtitle Мы&nbsp;создаем проекты как для #[b жилых], так и&nbsp;для #[b общественный&nbsp;помещений]
 
 			picture.one-image
-				source(media="(min-width: 768px)", srcset="./img/architectural_design/architectural_design.jpg", width="1153", height="490")
-				img(src="./img/architectural_design/architectural_design@md.jpg", alt="#", width="768", height="490")
+				source(media="(min-width: 768px)", srcset="./img/interior_design_project/interior_design_project.jpg", width="1153", height="490")
+				img(src="./img/interior_design_project/interior_design_project@md.jpg", alt="#", width="768", height="490")
 
 	section.container.gallery-wrap
 		h2.title-page Примеры работ
 
 		+gallery ([
 			[
-				'architectural_design',
-				'architectural_design-1',
+				'interior_design_project',
+				'interior_design_project-1',
 				'#',
 				'#',
 				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
 			],
 			[
-				'architectural_design',
-				'architectural_design-2',
+				'interior_design_project',
+				'interior_design_project-2',
 				'#',
 				'#',
 				'Интерьер квартиры в жилом комплексе «колизей» для молодой пары'
@@ -45,32 +45,18 @@ block main
 
 		+gallery ([
 			[
-				'architectural_design',
-				'architectural_design-3',
+				'interior_design_project',
+				'interior_design_project-3',
 				'#',
 				'#',
-				'Дизайн проект жилых зданий'
+				'Интерьеры жилых помещений'
 			],
 			[
-				'architectural_design',
-				'architectural_design-4',
+				'interior_design_project',
+				'interior_design_project-4',
 				'#',
 				'#',
-				'Инж'
-			],
-			[
-				'architectural_design',
-				'architectural_design-5',
-				'#',
-				'#',
-				'АР+КР'
-			],
-			[
-				'architectural_design',
-				'architectural_design-6',
-				'#',
-				'#',
-				'Авторский надзор'
+				'Интерьеры общественных помещений'
 			]
 		], 'gallery--only-small')
 
