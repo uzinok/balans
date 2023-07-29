@@ -10,8 +10,9 @@ section.feedback.container
 				input#name.feedback__input(type="text", name="name", placeholder="Ваше имя", required)
 				label.visually-hidden(for="phone") Напишите номер телефона
 				input#phone.feedback__input(type="tel", name="phone", placeholder="+7 (___) ___-__-__", required)
-				input#checkbox.visually-hidden.feedback__checkbox(type="checkbox")
-				label.feedback__label-checkbox(for="checkbox") Даю согласие на&nbsp;обработку персональных данных
+				label.feedback__label-checkbox(for="checkbox")
+					input#checkbox.feedback__checkbox(type="checkbox")
+					| Даю согласие на&nbsp;обработку персональных данных
 			button.feedback__submit(type="submit") Оставить заявку
 
 	.feedback__wrap
