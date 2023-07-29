@@ -4,11 +4,6 @@ mixin gallery (array, MyClass)
 		each arr in array
 			li.gallery__item
 				picture
-					//- source(media="(min-width: 768px)", srcset=srcset=`img/${arr[0]}/${arr[1]}@xl.avif`, type="image/avif")
-					//- source(media="(min-width: 768px)", srcset=srcset=`img/${arr[0]}/${arr[1]}@xl.webp`, type="image/webp")
-					//- source(media="(min-width: 768px)", srcset=`img/${arr[0]}/${arr[1]}@xl.jpg`)
-					//- source(srcset=`img/${arr[0]}/${arr[1]}.avif`, type="image/avif")
-					//- source(srcset=`img/${arr[0]}/${arr[1]}.webp`, type="image/webp")
 					img(src=`img/${arr[0]}/${arr[1]}.jpg`, alt=`${arr[2]}`)
 				if arr[3]
 					h3
